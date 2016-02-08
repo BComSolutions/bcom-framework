@@ -17,7 +17,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'The page requested could not be found.', 'bcom' ); ?></p>
+					<p><?php _e( "We couldn't find that. Maybe try another search?", 'bcom' ); ?></p>
 
 					<?php get_search_form(); ?>
 				</div><!-- .page-content -->

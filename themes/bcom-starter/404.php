@@ -11,13 +11,13 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 
-			<section class="error-404 not-found">
+			<section class="not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( '404', 'forward' ); ?></h1>
+					<h1 class="page-title"><?php _e( '404', 'bcom' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'The page requested could not be found.', 'forward' ); ?></p>
+					<p><?php _e( 'The page requested could not be found.', 'bcom' ); ?></p>
 
 					<?php get_search_form(); ?>
 				</div><!-- .page-content -->

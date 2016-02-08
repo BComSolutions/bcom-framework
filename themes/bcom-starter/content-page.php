@@ -18,7 +18,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'forward' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'bcom' ),
 				'after'  => '</div>',
 				'pagelink' => '<span>%</span>',
 			) );
@@ -26,6 +26,6 @@
 	</section><!-- .entry-content -->
 
 	<section class="entry-footer">
-		<?php edit_post_link( __( 'Edit', 'forward' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'bcom' ), '<span class="edit-link">', '</span>' ); ?>
 	</section><!-- .entry-footer -->
 </article><!-- #post-## -->

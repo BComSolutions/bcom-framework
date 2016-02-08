@@ -11,7 +11,7 @@ get_header(); ?>
 <section id="main" class="site-main" role="main">
 
 	<div id="primary" class="content-area">
-		
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>

@@ -51,15 +51,15 @@ function bcom_posts_navigation() {
 	}
 	?>
 	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'forward' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'bcom' ); ?></h2>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( 'Older Posts', 'forward' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( 'Older Posts', 'bcom' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer Posts', 'forward' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer Posts', 'bcom' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -82,7 +82,7 @@ function bcom_post_navigation() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'forward' ); ?></h2>
+		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'bcom' ); ?></h2>
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="nav-previous"><span class="nav-label">Previous:</span> %link</div>', '%title' );
@@ -114,12 +114,12 @@ function bcom_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'forward' ),
+		_x( 'Posted on %s', 'post date', 'bcom' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		_x( 'by %s', 'post author', 'forward' ),
+		_x( 'by %s', 'post author', 'bcom' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -136,25 +136,25 @@ function bcom_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'forward' ) );
+		$categories_list = get_the_category_list( __( ', ', 'bcom' ) );
 		if ( $categories_list && bcom_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'forward' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'bcom' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'forward' ) );
+		$tags_list = get_the_tag_list( '', __( ', ', 'bcom' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'forward' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'bcom' ) . '</span>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'forward' ), __( '1 Comment', 'forward' ), __( '% Comments', 'forward' ) );
+		comments_popup_link( __( 'Leave a comment', 'bcom' ), __( '1 Comment', 'bcom' ), __( '% Comments', 'bcom' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'forward' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'bcom' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
@@ -171,45 +171,45 @@ if ( ! function_exists( 'the_archive_title' ) ) :
  */
 function the_archive_title( $before = '', $after = '' ) {
 	if ( is_category() ) {
-		$title = sprintf( __( 'Category: %s', 'forward' ), single_cat_title( '', false ) );
+		$title = sprintf( __( 'Category: %s', 'bcom' ), single_cat_title( '', false ) );
 	} elseif ( is_tag() ) {
-		$title = sprintf( __( 'Tag: %s', 'forward' ), single_tag_title( '', false ) );
+		$title = sprintf( __( 'Tag: %s', 'bcom' ), single_tag_title( '', false ) );
 	} elseif ( is_author() ) {
-		$title = sprintf( __( 'Author: %s', 'forward' ), '<span class="vcard">' . get_the_author() . '</span>' );
+		$title = sprintf( __( 'Author: %s', 'bcom' ), '<span class="vcard">' . get_the_author() . '</span>' );
 	} elseif ( is_year() ) {
-		$title = sprintf( __( 'Year: %s', 'forward' ), get_the_date( _x( 'Y', 'yearly archives date format', 'forward' ) ) );
+		$title = sprintf( __( 'Year: %s', 'bcom' ), get_the_date( _x( 'Y', 'yearly archives date format', 'bcom' ) ) );
 	} elseif ( is_month() ) {
-		$title = sprintf( __( 'Month: %s', 'forward' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'forward' ) ) );
+		$title = sprintf( __( 'Month: %s', 'bcom' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'bcom' ) ) );
 	} elseif ( is_day() ) {
-		$title = sprintf( __( 'Day: %s', 'forward' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'forward' ) ) );
+		$title = sprintf( __( 'Day: %s', 'bcom' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'bcom' ) ) );
 	} elseif ( is_tax( 'post_format' ) ) {
 		if ( is_tax( 'post_format', 'post-format-aside' ) ) {
-			$title = _x( 'Asides', 'post format archive title', 'forward' );
+			$title = _x( 'Asides', 'post format archive title', 'bcom' );
 		} elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) {
-			$title = _x( 'Galleries', 'post format archive title', 'forward' );
+			$title = _x( 'Galleries', 'post format archive title', 'bcom' );
 		} elseif ( is_tax( 'post_format', 'post-format-image' ) ) {
-			$title = _x( 'Images', 'post format archive title', 'forward' );
+			$title = _x( 'Images', 'post format archive title', 'bcom' );
 		} elseif ( is_tax( 'post_format', 'post-format-video' ) ) {
-			$title = _x( 'Videos', 'post format archive title', 'forward' );
+			$title = _x( 'Videos', 'post format archive title', 'bcom' );
 		} elseif ( is_tax( 'post_format', 'post-format-quote' ) ) {
-			$title = _x( 'Quotes', 'post format archive title', 'forward' );
+			$title = _x( 'Quotes', 'post format archive title', 'bcom' );
 		} elseif ( is_tax( 'post_format', 'post-format-link' ) ) {
-			$title = _x( 'Links', 'post format archive title', 'forward' );
+			$title = _x( 'Links', 'post format archive title', 'bcom' );
 		} elseif ( is_tax( 'post_format', 'post-format-status' ) ) {
-			$title = _x( 'Statuses', 'post format archive title', 'forward' );
+			$title = _x( 'Statuses', 'post format archive title', 'bcom' );
 		} elseif ( is_tax( 'post_format', 'post-format-audio' ) ) {
-			$title = _x( 'Audio', 'post format archive title', 'forward' );
+			$title = _x( 'Audio', 'post format archive title', 'bcom' );
 		} elseif ( is_tax( 'post_format', 'post-format-chat' ) ) {
-			$title = _x( 'Chats', 'post format archive title', 'forward' );
+			$title = _x( 'Chats', 'post format archive title', 'bcom' );
 		}
 	} elseif ( is_post_type_archive() ) {
-		$title = sprintf( __( 'Archives: %s', 'forward' ), post_type_archive_title( '', false ) );
+		$title = sprintf( __( 'Archives: %s', 'bcom' ), post_type_archive_title( '', false ) );
 	} elseif ( is_tax() ) {
 		$tax = get_taxonomy( get_queried_object()->taxonomy );
 		/* translators: 1: Taxonomy singular name, 2: Current taxonomy term */
-		$title = sprintf( __( '%1$s: %2$s', 'forward' ), $tax->labels->singular_name, single_term_title( '', false ) );
+		$title = sprintf( __( '%1$s: %2$s', 'bcom' ), $tax->labels->singular_name, single_term_title( '', false ) );
 	} else {
-		$title = __( 'Archives', 'forward' );
+		$title = __( 'Archives', 'bcom' );
 	}
 
 	/**

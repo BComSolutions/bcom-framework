@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<section class="entry-content">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -23,9 +23,9 @@
 				'pagelink' => '<span>%</span>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</section><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<section class="entry-footer">
 		<?php edit_post_link( __( 'Edit', 'forward' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	</section><!-- .entry-footer -->
 </article><!-- #post-## -->

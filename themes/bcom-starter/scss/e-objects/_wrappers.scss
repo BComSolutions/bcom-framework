@@ -34,9 +34,21 @@ nav {
  * Page wrappers
  */
 
+.site-main {
+    @include outer-container();
+}
+
 #primary,
 #secondary {
     margin-top: 1em;
+}
+
+#primary {
+    @include span_columns(8);
+}
+
+#secondary {
+    @include span-columns(4);
 }
 
 .container {

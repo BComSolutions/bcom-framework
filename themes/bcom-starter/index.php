@@ -13,8 +13,9 @@
 
 get_header(); ?>
 
+<section id="main" class="site-main" role="main">
+
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -22,11 +23,11 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
+				/* Include the Post-Format-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+				 */
+				get_template_part( 'content', get_post_format() );
 				?>
 
 			<?php endwhile; ?>
@@ -39,8 +40,10 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	<?php get_sidebar(); ?>
+
+</section><!-- #main -->
+
 <?php get_footer(); ?>

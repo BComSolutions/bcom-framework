@@ -31,8 +31,8 @@
 		<?php bcom_social_links(); ?>
 	</div>
 
-	<footer class="entry-footer">
+	<section class="entry-footer">
 		<?php bcom_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</section><!-- .entry-footer -->
 
 </article><!-- #post-## -->

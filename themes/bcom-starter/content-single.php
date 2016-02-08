@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Forward
+ * @package BCom
  */
 ?>
 

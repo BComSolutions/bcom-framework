@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package Forward
+ * @package BCom
  */
 
 get_header(); ?>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Forward Theme Customizer
+ * BCom Theme Customizer
  *
- * @package Forward
+ * @package BCom
  */
 
 /**

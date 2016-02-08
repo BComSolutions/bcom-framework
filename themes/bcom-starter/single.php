@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package Forward
+ * @package BCom
  */
 
 get_header(); ?>

@@ -1,0 +1,47 @@
+.accordion-title {
+    background: $color-accent;
+    color: $white;
+    cursor: pointer;
+    padding: 0.5em;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $color-secondary;  // triangle pointing down
+
+        position: relative;
+        float: right;
+        right: 1em;
+    }
+}
+
+.accordion-title.open:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid $color-secondary;  // triangle pointing up
+    border-top: 17px solid transparent;
+
+    position: relative;
+    float: right;
+    right: 1em;
+}
+
+.accordion-title:hover {
+    cursor: pointer;
+}
+
+.accordion-title.open {
+    cursor: default;
+}
+
+.accordion-content {
+    padding-bottom: 1em;
+}

@@ -1,0 +1,36 @@
+.owl-carousel {
+    z-index: 0;
+}
+
+.default-theme.wp-posts-carousel .wp-posts-carousel-container {
+    background-color: lighten($color-secondary,20%) !important;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75) !important;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75) !important;
+    height: 10em;
+}
+
+.wp-posts-carousel-title {
+    color: $color-primary;
+    font-size: 1.9em !important;
+    line-height: 1;
+    margin-bottom: 0.7em;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+
+    a {
+        text-decoration: none;
+        color: $color-primary;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
+
+.wp-posts-carousel-desc {
+    color: $color-text;
+    font-size: 1.5em !important;
+    text-align: center;
+}

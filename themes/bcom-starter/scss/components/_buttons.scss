@@ -1,0 +1,47 @@
+/*
+ * Styles for buttons
+ *
+ */
+ 
+button {
+    // -webkit-appearance: button;
+    cursor: pointer;
+    overflow: visible;
+   	text-transform: none;
+
+   	font-weight: 400;
+    font-family: $font-body;
+    font-size: 1em;
+    line-height: 1.77689em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em 1em;
+    width: 100%;
+    color: $color-background;
+    background-color: $color-secondary;
+    //border: 1px solid black;
+
+   	::-moz-focus-inner {
+    	border: 0;
+    	padding: 0
+   	}
+
+   	[disabled] {
+    cursor: default;
+	}
+}
+
+button:hover {
+    background-color: darken($color-secondary, 10%);
+}
+
+.btn-register {
+    margin-bottom: 4em;
+    margin-top: 3em;
+    max-width: 15em;
+}
+
+.button-list button {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}

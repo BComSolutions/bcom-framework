@@ -1,0 +1,153 @@
+/*
+ * Styles for forms
+ *
+ */
+
+html input[disabled] {
+    cursor: default;
+}
+
+input[type=reset],
+input[type=submit] {
+    // -webkit-appearance: button;
+    cursor: pointer;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+input::-moz-focus-inner {
+    border: 0;;
+    padding: 0
+}
+
+select {
+    text-transform: none;
+}
+
+input,
+select,
+textarea {
+    font-weight: 400;
+    font-family: $font-body;
+    font-size: 1em;
+    line-height: 1.77689em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: $color-primary;
+}
+
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
+    margin-top: .31672em;
+    margin-bottom: 1em;
+    padding: 6px 8px;
+    border: 1px solid #c5c5c5;
+    width: 100%
+}
+input[type=color]:focus,
+input[type=color]:hover,
+input[type=date]:focus,
+input[type=date]:hover,
+input[type=datetime-local]:focus,
+input[type=datetime-local]:hover,
+input[type=datetime]:focus,
+input[type=datetime]:hover,
+input[type=email]:focus,
+input[type=email]:hover,
+input[type=month]:focus,
+input[type=month]:hover,
+input[type=number]:focus,
+input[type=number]:hover,
+input[type=password]:focus,
+input[type=password]:hover,
+input[type=search]:focus,
+input[type=search]:hover,
+input[type=tel]:focus,
+input[type=tel]:hover,
+input[type=text]:focus,
+input[type=text]:hover,
+input[type=time]:focus,
+input[type=time]:hover,
+input[type=url]:focus,
+input[type=url]:hover,
+input[type=week]:focus,
+input[type=week]:hover,
+textarea:focus,
+textarea:hover {
+    border-color: #999;
+    outline: 0
+}
+input[type=search] {
+    width: auto;
+    border-right: none;
+}
+input[type=submit] {
+    font-weight: 400;
+    padding: 6px 1.77689em;
+    color: $color-text;
+    border: 1px solid $color-accent;
+    background-color: transparent;
+}
+input[type=submit]:hover {
+    color: #f9f9f9;
+    background-color: #3185CB
+}
+input[type=submit]:active {
+    position: relative;
+    top: 1px;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+.post-password-form label {
+    margin-top: 1.77689em
+}
+.post-password-form input[type=password] {
+    margin-top: .75019em
+}

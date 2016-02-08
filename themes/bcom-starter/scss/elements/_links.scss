@@ -1,0 +1,16 @@
+/*
+ * Styles for links
+ *
+ */
+
+ a {
+    background-color: transparent;
+    text-decoration: underline;
+    color: $color-accent; // color alone isn't accessibility friendly
+
+	:active,
+	:hover {
+		color: $color-primary;
+	    outline: 0;
+	}
+}

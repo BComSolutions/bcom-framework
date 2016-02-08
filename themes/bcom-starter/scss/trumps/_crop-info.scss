@@ -1,0 +1,199 @@
+.crop-info-center h1 {
+    color: $color-text;
+    font-size: 1.9em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    border-bottom: 3px solid $color-primary;
+    line-height: 0.1em;
+    margin-top: 2em;
+}
+
+span.title-block {
+    background: $white;
+    padding: 0 10px;
+}
+
+.crop-info-center h2 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1em;
+    color: lighten($color-text, 20%);
+    line-height: 3;
+    text-align: center;
+}
+
+.ui-tabs-nav > li {
+    margin-left: 0;
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-secondary;
+        }
+
+        &:active {
+            top: 1px;
+        }
+    }
+}
+
+.crop-stage-graphic {
+    width: 108px;
+}
+
+.crop-info-planning-months,
+.crop-info-planting-months,
+.crop-info-emergence-months,
+.crop-info-vegetative-months,
+.crop-info-reproductive-months,
+.crop-info-grain-fill-months,
+.crop-info-harvest-months,
+.crop-info-reporting-months {
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+    position: relative;
+    top: -120px;
+    height: 150px;
+    background-image: url("../auburnagency/images/crop-info-months-tab.jpg");
+    background-position: center;
+    padding-top: 2.5em;
+    padding-bottom: 0.5em;
+    z-index: 1;
+
+    &:after {
+        @include clearfix;
+    }
+}
+
+.crop-info-planning-months span,
+.crop-info-planting-months span,
+.crop-info-emergence-months span,
+.crop-info-vegetative-months span,
+.crop-info-reproductive-months span,
+.crop-info-grain-fill-months span,
+.crop-info-harvest-months span,
+.crop-info-reporting-months span {
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.crop-stage-graphic img {
+    margin-bottom: 1.2em;
+}
+
+.tab-buttons li {
+    float: left;
+    background-color: $color-primary;
+    list-style: none;
+    margin: 0.25em 0.5em;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 0;
+        color: $white;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-medium) {
+    section.crop-info-center.section.group {
+        position: relative;
+        //top: 60px;
+    }
+    .crop-info-center-menu-background {
+        display: none;
+    }
+
+    .crop-info-planning-months,
+    .crop-info-planting-months,
+    .crop-info-emergence-months,
+    .crop-info-vegetative-months,
+    .crop-info-reproductive-months,
+    .crop-info-grain-fill-months,
+    .crop-info-harvest-months,
+    .crop-info-reporting-months,
+    .crop-info-planning-months span,
+    .crop-info-planting-months span,
+    .crop-info-emergence-months span,
+    .crop-info-vegetative-months span,
+    .crop-info-reproductive-months span,
+    .crop-info-grain-fill-months span,
+    .crop-info-harvest-months span,
+    .crop-info-reporting-months span {
+        display: none;
+    }
+
+    .crop-info-center h1 {
+        line-height: 1.3;
+    }
+
+    .r-tabs-accordion-title,
+    ul.ui-tabs-nav li {
+        background-color: $color-accent;
+        color: $white;
+        padding: 0.5em 1em;
+        margin-top: 0.5em;
+        text-transform: uppercase;
+        width: 100%;
+
+        &:first-of-type {
+            margin-top: 1rem;
+        }
+
+        & a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    ul.tabs, .ui-tabs-nav {
+        top: 0;
+    }
+
+    .r-tabs-anchor img,
+    .crop-stage-graphic img {
+        display: none;
+        float: right;
+        width: 50px;
+    }
+
+    .info-panel.col{
+        top: 0;
+    }
+
+    .tab-buttons li {
+        width: 100%;
+
+        &:last-of-type {
+            margin-bottom: 2em;
+        }
+    }
+
+    .tab-button {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tab-panel-button {
+        margin: 1em auto;
+    }
+}

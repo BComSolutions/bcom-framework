@@ -1,0 +1,46 @@
+/*
+ * Heading styles
+ *
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+
+    a {
+        text-decoration: none;
+
+        :hover {
+            //color: $color1;
+        }
+    }
+}
+
+h1 {
+    //color: $color-primary;
+    font-family: $font-heading;
+    font-size: $font-size-base * 1.7;
+}
+h2 {
+    //color: $color-primary;
+    font-family: $font-heading;
+    font-size: $font-size-base * 1.7;
+    font-weight: bolder;
+    //text-transform: uppercase;
+}
+h3 {
+    //color: $color-primary;
+    font-family: $font-heading;
+    font-size: $font-size-base * 1.5;
+    font-weight: bolder;
+}
+h4 {
+    //color: $color=primary;
+    font-family: $font-heading;
+    font-size: $font-size-base * 1.3;
+    text-transform: uppercase;
+}
+h5 {
+    //color: $color-primary;
+    font-family: $font-heading;
+    font-style: italic;
+}

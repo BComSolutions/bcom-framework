@@ -1,0 +1,63 @@
+.hungryfeed_date {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hungryfeed_item h3 {
+    line-height: 1.2;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+
+    a {
+        color: $color-primary;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.hungryfeed_feed_title {
+    text-transform: capitalize;
+
+    //&:after {
+    //    float: right;
+    //    background-color: $color-primary;
+    //    color: $white;
+    //    font-weight: 300;
+    //    text-transform: uppercase;
+    //    padding-left: 1em;
+    //    padding-right: 1em;
+    //    content: "Visit Site";
+    //}
+}
+
+.rss-item button,
+.rss-item .rss-button {
+    background-color: $color-primary;
+    color: $white;
+    float: right;
+    font-size: 1em;
+    padding: 0.3em 0.5em;
+    position: relative;
+    top: 40px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+h3.hungryfeed_feed_title {
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.hungryfeed_item div:nth-of-type(2) {
+    padding-right: 1em;
+}
+
+.rss-feeds .textwidget:after {
+    @include clearfix;
+}

@@ -1,0 +1,75 @@
+.gallery {
+    display: block;
+    margin-bottom: 1em;
+    padding-top: 1em
+}
+.gallery::after {
+    clear: both;
+    display: table
+}
+.gallery-columns-2 .gallery-item:nth-child(2n+1),
+.gallery-columns-3 .gallery-item:nth-child(3n+1),
+.gallery-columns-4 .gallery-item:nth-child(4n+1),
+.gallery-columns-5 .gallery-item:nth-child(4n+1),
+.gallery-columns-6 .gallery-item:nth-child(6n+1),
+.gallery-columns-7 .gallery-item:nth-child(6n+1),
+.gallery-columns-8 .gallery-item:nth-child(6n+1),
+.gallery-columns-9 .gallery-item:nth-child(6n+1) {
+    clear: left
+}
+.gallery .gallery-item {
+    margin-bottom: 1em;
+    text-align: center
+}
+.gallery-columns-2 .gallery-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%
+}
+.gallery-columns-2 .gallery-item:last-child,
+.gallery-columns-2 .gallery-item:nth-child(2n) {
+    margin-right: 0
+}
+.gallery-columns-3 .gallery-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%
+}
+.gallery-columns-3 .gallery-item:last-child,
+.gallery-columns-3 .gallery-item:nth-child(3n) {
+    margin-right: 0
+}
+.gallery-columns-4 .gallery-item,
+.gallery-columns-5 .gallery-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%
+}
+.gallery-columns-4 .gallery-item:last-child,
+.gallery-columns-4 .gallery-item:nth-child(4n),
+.gallery-columns-5 .gallery-item:last-child,
+.gallery-columns-5 .gallery-item:nth-child(4n) {
+    margin-right: 0
+}
+.gallery-columns-6 .gallery-item,
+.gallery-columns-7 .gallery-item,
+.gallery-columns-8 .gallery-item,
+.gallery-columns-9 .gallery-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%
+}
+.gallery-columns-6 .gallery-item:last-child,
+.gallery-columns-6 .gallery-item:nth-child(6n),
+.gallery-columns-7 .gallery-item:last-child,
+.gallery-columns-7 .gallery-item:nth-child(6n),
+.gallery-columns-8 .gallery-item:last-child,
+.gallery-columns-8 .gallery-item:nth-child(6n),
+.gallery-columns-9 .gallery-item:last-child,
+.gallery-columns-9 .gallery-item:nth-child(6n) {
+    margin-right: 0
+}

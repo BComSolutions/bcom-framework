@@ -1,0 +1,80 @@
+/**
+ * Courtesy http://presscustomizr.com/snippet/adding-an-html5-search-form-in-your-wordpress-menu/
+ * and
+ * http://www.wpbeginner.com/wp-themes/how-to-add-a-search-toggle-effect-in-wordpress/
+ *
+ */
+
+#menu-main-menu {
+    float: left;
+}
+
+.site-header .my-nav-menu-search .search-box,
+.main-navigation .my-nav-menu-search .search-box {
+    //float: right;
+}
+
+.site-header .my-nav-menu-search .search-form,
+.main-navigation .my-nav-menu-search .search-form {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+    width: 35px;
+}
+
+.site-header .my-nav-menu-search .search-field,
+.main-navigation .my-nav-menu-search .search-field {
+    background-color: transparent;
+    background-image: url(images/search-icon-white.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: none;
+    cursor: pointer;
+    //height: 37px;
+    margin: 3px 0;
+    padding: 0 0 0 34px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition:         width 400ms ease, background 400ms ease;
+    width: 0;
+    z-index: 9999;
+}
+
+.site-header .my-nav-menu-search .search-field:focus,
+.main-navigation .my-nav-menu-search .search-field:focus {
+    background-color: #fff;
+    background-image: url(images/search-icon-black.png);
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 230px;
+    z-index: 9999;
+}
+
+.my-nav-menu-search .search-form .search-submit {
+    display: none;
+}
+
+li.menu-item.my-nav-menu-search {
+    margin-left: 0 !important;
+}
+
+
+// search form button (on search page when there's no results)
+.search-form label input[type=search] {
+    border: 1px solid $color-primary;
+    border-right: none;
+}
+
+input[type="submit"] {
+    background-color: $color-primary;
+    color: $white;
+    border: none;
+
+    &:hover {
+        background-color: $color-secondary;
+    }
+}

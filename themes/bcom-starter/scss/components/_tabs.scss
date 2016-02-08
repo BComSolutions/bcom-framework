@@ -1,0 +1,77 @@
+////////////////////
+// TABBED CONTENT //
+////////////////////
+
+.ui-tabs {
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul.tabs,
+.ui-tabs-nav {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: relative;
+    top: -3.1em;
+    z-index: 3;
+}
+
+ul.tabs li,
+.ui-tabs-anchor {
+    background: none;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: darken($white, 10%);
+    font-size: 0.9em;
+
+    //width: 100 / 7 * 100%; // where 8 is the number of tabs
+    width: 11.5%;  // because it didn't work like I wanted it to
+
+    &:first-of-type {
+        padding-left: 0;
+    }
+    &:last-of-type {
+        padding-right: 0;
+    }
+
+    &:hover,
+    &:active {
+        color: $color-secondary;
+        text-decoration: none;
+    }
+}
+
+.ui-tabs-active a {
+    color: $color-secondary;
+    font-weight: 700;
+}
+
+.ui-tabs-panel {
+    display: none;
+    padding: 1em 0;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+.ui-tabs-panel h1,
+.ui-tabs-panel h2,
+.ui-tabs-panel h3,
+.ui-tabs-panel h4 {
+    text-transform: uppercase;
+}
+
+.col.col-left {
+    margin-left: 0;
+    margin-top: -70px;
+}
+.col.col-right {
+    margin-right: 0;
+    margin-top: -70px;
+}

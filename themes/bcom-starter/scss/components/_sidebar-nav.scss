@@ -1,0 +1,45 @@
+// Top level menu items
+#menu-sidebar-menu {
+    li,
+    li.menu-item-has-children {
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: $color-accent;
+        color: $white;
+        line-height: 1;
+        margin-bottom: 0.7em;
+        padding: 1em;
+        position: relative;
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    & .current-menu-item {
+        background-color: $color-primary;
+        color: $color-secondary;
+        line-height: 1;
+    }
+}
+
+// Sub-menus
+#menu-sidebar-menu .sub-menu {
+    display: none;
+
+    & li:hover {
+        background-color: $color-secondary;
+    }
+    & li:first-of-type {
+        margin-top: 0.5em;
+    }
+}
+
+#menu-sidebar-menu > .current-menu-item .sub-menu {
+    display: block;
+}
+
+#menu-sidebar-menu > .current-menu-parent .sub-menu {
+    display: block;
+}

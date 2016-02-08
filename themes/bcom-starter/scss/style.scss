@@ -1,0 +1,137 @@
+/*!
+Theme Name: BCom Starter
+Theme URI: http://design.org/wordpress-starter-theme/
+Author: BCom Solutions, LLC
+Author URI: http://bcomonline.com
+Description: A custom-built, kick-ass WordPress theme based on the Forward starter theme.
+Version: 2016
+Text Domain: bcom
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*
+ * This theme uses the Inverted Triangle CSS method of organization with Sass
+ * http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+ * and
+ * follows the BEM Sass naming convention
+ * http://getbem.com/
+ *
+ */
+
+/*
+ * SETTINGS
+ * This layer should only house settings that need to be accessed from anywhere, including Sass variables.
+ * Examples of global settings might be things like the base font size, colour palettes, and so on.
+ *
+ */
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/structure";
+@import "settings/breakpoints";
+
+/*
+ * TOOLS
+ * This layer should include global mixins and functions.
+ * Any mixin or function that does not need accessing globally should belong in the partial to which it relates.
+ *
+ */
+//@import "bourbon/bourbon";
+//@import "neat/grid-settings";
+//@import "neat/neat";
+@import "tools/mixins";
+
+
+/*
+ * GENERIC
+ * The Generic layer is the first one that actually produces any CSS.
+ * It houses very high-level, far reaching styles.
+ * This layer is seldom modified, and is usually the same across any projects you work on.
+ * It contains things like Normalize.css, global box-sizing rules, CSS resets and so on.
+ *
+ *
+ * NOTE: You probably only need one of the following...
+ *
+ * Reset.css unstyles every element.
+ * Normalize.css styles browsers to render elements more consistently with each other.
+ * Sanitize.css styles browsers to render elements more consistently with developer expectations and preferences.
+ *
+ */
+
+//@import "generic/reset";
+//@import "generic/normalize";
+@import "generic/sanitize";
+@import "generic/core";
+@import "generic/align";
+
+/*
+ * ELEMENTS
+ * These are bare, unclassed HTML elements.
+ * It is very rarely added to or changed after initial setup.
+ * Once we have defined element-level styles, all additions and deviations should be implemented using classes.
+ *
+ */
+@import "elements/elements";
+@import "elements/headings";
+@import "elements/links";
+
+/*
+ * OBJECTS
+ * This is the first layer in which we find class-based selectors.
+ * These are concerned with styling non-cosmetic design patterns, or 'objects'.
+ * Objects can range from something as simple as a .wrapper element, to layout systems, to media objects.
+ *
+ */
+@import "objects/wrappers";
+@import "objects/grid";
+//@import "objects/media";
+
+/*
+ * COMPONENTS
+ * The Components layer is where we begin to style recognizable pieces of UI.
+ * We shouldn't find any selectors with a lower specificity than one class in this layer.
+ * This is where the majority of your work will happen after initial project set-up.
+ * Adding new components and features usually makes up the vast majority of development.
+ *
+ */
+@import "components/branding";
+@import "components/site-nav";
+@import "components/sidebar-nav";
+//@import "components/nav-links";
+//@import "components/buttons";
+//@import "components/forms";
+@import "components/slider";
+@import "components/widgets";
+//@import "components/carousel";
+//@import "components/comments";
+//@import "components/gallery";
+//@import "components/cards";
+@import "components/search-icon";
+@import "components/tabs";
+
+/*
+ * VENDORS
+ * This layer addresses styling specific to vendor plugins, such as Gravity Forms or The Events Calendar.
+ * It has the power to override anything at all that has gone before it.
+ *
+ */
+//@import "vendors/gravity-forms";
+//@import "vendors/events-calendar";
+@import "vendors/easy-twitter-feed";
+@import "vendors/hungry-feed";
+//@import "vendors/master-slider";
+//@import "vendors/responsive-tabs";
+//@import "vendors/wp-posts-carousel";
+//@import "vendors/accordion-shortcodes";
+
+/*
+ * TRUMPS
+ * This layer beats – or 'trumps' – all other layers.
+ * It has the power to override anything at all that has gone before it.
+ * It is inelegant and heavy-handed, and contains utility and helper classes, hacks and overrides.
+ * The !important tags should go here.
+ *
+ */
+@import "trumps/utilities";
+@import "trumps/shame";

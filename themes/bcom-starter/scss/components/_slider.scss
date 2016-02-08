@@ -1,0 +1,27 @@
+.flexslider {
+    background-color: lighten($color-secondary, 20%) !important;
+    border: none !important;
+    box-shadow:         5px 5px 5px 0 $color-accent;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -moz-box-shadow:    5px 5px 5px 0 $color-accent;  /* Firefox 3.5 - 3.6 */
+    -webkit-box-shadow: 5px 5px 5px 0 $color-accent;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    margin-top: 20px !important;
+}
+
+.slides {
+    text-align: center;
+    height: 10em;
+
+    li {
+        list-style: none;
+        font-size: 1.2em;
+
+        h2 {
+            color: $color-primary;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.slide h2 {
+    margin-top: 1em;
+}

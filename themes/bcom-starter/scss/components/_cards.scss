@@ -1,0 +1,56 @@
+.section.cards {
+    @include outer-container;
+
+    margin-bottom: 2em;
+}
+.front-page.card {
+    @include span-columns(4);
+    @include omega(3n);
+
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: none;
+
+    @include media($mobile) {
+        @include span-columns(12);
+        @include omega(1n);
+    }
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+.cards .widget:first-child {
+    padding-top: 1em;
+}
+
+.card-title {
+    font-family: $font-heading;
+    color: white;
+    font-size: larger;
+    position: relative;
+    top: 1em;
+    padding-left: 0.5em;
+    line-height: 0;
+}
+
+.card-footer {
+    display: block;
+    background-color: $color-primary;
+    color: white;
+    padding: 0.5em;
+    position: relative;
+    top: -0.4em;
+    text-transform: capitalize;
+
+    :after {
+        content: ">";
+        float: right;
+    }
+
+    &:hover {
+        color: white;
+    }
+}

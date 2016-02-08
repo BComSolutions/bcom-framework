@@ -1,0 +1,28 @@
+// Twitter widget customization
+.widget-easy-twitter-feed-widget-global-wrapper {
+    text-align: center;
+}
+
+.twitter-feed {
+
+}
+
+// icon stack
+.fa-circle {
+    color: #55acee;
+}
+.fa-twitter {
+    color: white;
+}
+
+.widget-title.twitter {
+    text-align: center;
+
+    a {
+        color: $color-primary;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

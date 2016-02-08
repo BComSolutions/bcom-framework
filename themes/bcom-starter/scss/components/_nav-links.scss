@@ -1,0 +1,46 @@
+/*
+ * Styles for the prev/next post navigation links
+ *
+ */
+
+.nav-links {
+    display: block;
+    line-height: 1.333em;
+}
+.nav-links::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+.nav-links .nav-next {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: right;
+}
+.nav-links .nav-next:last-child {
+    margin-right: 0;
+}
+.nav-links .nav-previous {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+}
+.nav-links .nav-previous:last-child {
+    margin-right: 0;
+}
+.nav-links .nav-previous+.nav-next {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+}
+.nav-links .nav-previous+.nav-next:last-child {
+    margin-right: 0;
+}
+
+.post-navigation {
+    background-color: transparent;
+}

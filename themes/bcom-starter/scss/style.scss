@@ -24,7 +24,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Section A
  * SETTINGS
  * This layer should only house settings that need to be accessed from anywhere, including Sass variables.
- * Examples of global settings might be things like the base font size, colour palettes, and so on.
+ * Examples of global settings might be things like the base font size, color palettes, and so on.
  *
  */
 @import "a-settings/colors";
@@ -39,9 +39,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Any mixin or function that does not need accessing globally should belong in the partial to which it relates.
  *
  */
-//@import "bourbon/bourbon";
-//@import "neat/grid-settings";
-//@import "neat/neat";
+
 @import "b-tools/mixins";
 
 
@@ -88,8 +86,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  */
 @import "e-objects/wrappers";
-@import "e-objects/grid";
 @import "e-objects/media";
+@import "e-objects/bourbon/bourbon";
+@import "e-objects/neat/grid-settings";
+@import "e-objects/neat/neat";
 
 /*
  * Section F

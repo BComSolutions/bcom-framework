@@ -62,10 +62,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  */
 
-//@import "c-generic/reset";
+@import "c-generic/reset";
 //@import "c-generic/normalize";
-@import "c-generic/sanitize";
-@import "c-generic/core";
+//@import "c-generic/sanitize";
+//@import "c-generic/core";
 @import "c-generic/align";
 
 /*
@@ -89,7 +89,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 @import "e-objects/wrappers";
 @import "e-objects/grid";
-//@import "e-objects/media";
+@import "e-objects/media";
 
 /*
  * Section F
@@ -101,7 +101,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  */
 @import "f-components/branding";
-@import "f-components/site-nav";
+@import "f-components/nav-site";
 @import "f-components/sidebar-nav";
 //@import "f-components/nav-links";
 //@import "f-components/buttons";

@@ -6,13 +6,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php forward_featured_image(); ?>
+	<?php bcom_featured_image(); ?>
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php forward_posted_on(); ?>
+			<?php bcom_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -28,11 +28,11 @@
 	</div><!-- .entry-content -->
 
 	<div class="entry-social">
-		<?php forward_social_links(); ?>
+		<?php bcom_social_links(); ?>
 	</div>
 
 	<footer class="entry-footer">
-		<?php forward_entry_footer(); ?>
+		<?php bcom_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

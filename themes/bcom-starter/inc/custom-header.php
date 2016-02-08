@@ -18,31 +18,31 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses forward_header_style()
- * @uses forward_admin_header_style()
- * @uses forward_admin_header_image()
+ * @uses bcom_header_style()
+ * @uses bcom_admin_header_style()
+ * @uses bcom_admin_header_image()
  */
-function forward_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'forward_custom_header_args', array(
+function bcom_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'bcom_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'forward_header_style',
-		'admin-head-callback'    => 'forward_admin_header_style',
-		'admin-preview-callback' => 'forward_admin_header_image',
+		'wp-head-callback'       => 'bcom_header_style',
+		'admin-head-callback'    => 'bcom_admin_header_style',
+		'admin-preview-callback' => 'bcom_admin_header_image',
 	) ) );
 }
-add_action( 'after_setup_theme', 'forward_custom_header_setup' );
+add_action( 'after_setup_theme', 'bcom_custom_header_setup' );
 
-if ( ! function_exists( 'forward_header_style' ) ) :
+if ( ! function_exists( 'bcom_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see forward_custom_header_setup().
+ * @see bcom_custom_header_setup().
  */
-function forward_header_style() {
+function bcom_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -75,15 +75,15 @@ function forward_header_style() {
 	</style>
 	<?php
 }
-endif; // forward_header_style
+endif; // bcom_header_style
 
-if ( ! function_exists( 'forward_admin_header_style' ) ) :
+if ( ! function_exists( 'bcom_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see forward_custom_header_setup().
+ * @see bcom_custom_header_setup().
  */
-function forward_admin_header_style() {
+function bcom_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -103,15 +103,15 @@ function forward_admin_header_style() {
 	</style>
 <?php
 }
-endif; // forward_admin_header_style
+endif; // bcom_admin_header_style
 
-if ( ! function_exists( 'forward_admin_header_image' ) ) :
+if ( ! function_exists( 'bcom_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see forward_custom_header_setup().
+ * @see bcom_custom_header_setup().
  */
-function forward_admin_header_image() {
+function bcom_admin_header_image() {
 	$style = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 ?>
 	<div id="headimg">
@@ -123,4 +123,4 @@ function forward_admin_header_image() {
 	</div>
 <?php
 }
-endif; // forward_admin_header_image
+endif; // bcom_admin_header_image

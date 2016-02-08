@@ -1,17 +1,17 @@
 <?php
 /**
- * Forward functions and definitions
+ * BCom functions and definitions
  *
- * @package Forward
+ * @package BCom
  */
 
 
-if ( ! function_exists( 'forward_google_fonts' ) ) :
+if ( ! function_exists( 'bcom_google_fonts' ) ) :
 /**
  * Adds google font support.
  * 
  */
-function forward_google_fonts() {
+function bcom_google_fonts() {
 	$query_args = array(
 		'family' => 'Lato:400,300,700,400italic',
 
@@ -25,7 +25,7 @@ function forward_google_fonts() {
 
 	wp_enqueue_style('bcom_google_fonts');
 }
-endif; // forward_google_fonts
+endif; // bcom_google_fonts
 add_action('wp_enqueue_scripts', 'bcom_google_fonts');
 
 /**
@@ -36,7 +36,7 @@ if ( ! isset( $content_width ) ) {
 }
 
 
-if ( ! function_exists( 'forward_setup' ) ) :
+if ( ! function_exists( 'bcom_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -44,15 +44,15 @@ if ( ! function_exists( 'forward_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function forward_setup() {
+function bcom_setup() {
 
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on Forward, use a find and replace
-	 * to change 'forward' to the name of your theme in all the template files
+	 * to change 'bcom' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'forward', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'bcom', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -74,7 +74,7 @@ function forward_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'forward' ),
+		'primary' => __( 'Primary Menu', 'bcom' ),
 	) );
 
 	/*
@@ -94,24 +94,24 @@ function forward_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'forward_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'bcom_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-endif; // forward_setup
-add_action( 'after_setup_theme', 'forward_setup' );
+endif; // bcom_setup
+add_action( 'after_setup_theme', 'bcom_setup' );
 
 
-if ( ! function_exists( 'forward_widgets_init' ) ) :
+if ( ! function_exists( 'bcom_widgets_init' ) ) :
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function forward_widgets_init() {
+function bcom_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'forward' ),
+		'name'          => __( 'Sidebar', 'bcom' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -120,15 +120,15 @@ function forward_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-endif; // forward_widgets_init
-add_action( 'widgets_init', 'forward_widgets_init' );
+endif; // bcom_widgets_init
+add_action( 'widgets_init', 'bcom_widgets_init' );
 
-if ( ! function_exists( 'forward_scripts' ) ) :
+if ( ! function_exists( 'bcom_scripts' ) ) :
 /**
  * Enqueue scripts and styles.
  */
-function forward_scripts() {
-	wp_enqueue_style( 'forward-style', get_stylesheet_uri() );
+function bcom_scripts() {
+	wp_enqueue_style( 'bcom-style', get_stylesheet_uri() );
 
 	// Front-end scripts
 	if ( !is_admin() ) {
@@ -141,7 +141,7 @@ function forward_scripts() {
 	  }
 
 	  // Load theme-specific JavaScript with versioning based on last modified time; http://www.ericmmartin.com/5-tips-for-using-jquery-with-wordpress/
-	  wp_enqueue_script( 'forward-js-core', get_stylesheet_directory_uri() . '/js/core' . $suffix . '.js', array( 'jquery' ), filemtime( get_template_directory() . '/js/core' . $suffix . '.js' ), true );
+	  wp_enqueue_script( 'bcom-js-core', get_stylesheet_directory_uri() . '/js/core' . $suffix . '.js', array( 'jquery' ), filemtime( get_template_directory() . '/js/core' . $suffix . '.js' ), true );
 
 	  // Conditionally load another script
 	  // if ( is_singular() ) {
@@ -149,16 +149,16 @@ function forward_scripts() {
 	  // }
 	}
 
-	// wp_enqueue_script( 'forward-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	// wp_enqueue_script( 'bcom-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	// wp_enqueue_script( 'forward-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	// wp_enqueue_script( 'bcom-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-endif; // forward_scripts
-add_action( 'wp_enqueue_scripts', 'forward_scripts' );
+endif; // bcom_scripts
+add_action( 'wp_enqueue_scripts', 'bcom_scripts' );
 
 
 /**

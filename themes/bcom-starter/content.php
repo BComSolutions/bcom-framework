@@ -6,14 +6,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php forward_featured_image(); ?>
+	<?php bcom_featured_image(); ?>
 
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php forward_posted_on(); ?>
+			<?php bcom_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -37,6 +37,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php forward_entry_footer(); ?>
+		<?php bcom_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

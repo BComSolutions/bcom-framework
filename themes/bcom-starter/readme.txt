@@ -23,7 +23,7 @@ A modern WordPress starter theme built for designers. Many themes try to do ever
 Custom web fonts are enqueued using https://www.google.com/fonts
 
 1. Open functions.php
-2. Search for forward_google_fonts()
+2. Search for bcom_google_fonts()
 3. Modify $query_args
 
 == Credits ==

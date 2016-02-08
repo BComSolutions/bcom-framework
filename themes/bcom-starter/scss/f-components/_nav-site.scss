@@ -3,176 +3,92 @@
  *
  */
 
-// MAIN NAVIGATION MENU
+// PRIMARY NAVIGATION MENU
 // Courtesy http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu
 
-.main-navigation .menu .menu-item {
-    background-color: $color-accent;
-    margin-left: 10px;
-    padding: 0.5em 1em;
-    text-transform: uppercase;
+// before we begin, hide the submenus
+nav ul ul {
+    display: none;
+}
 
-    // courtesy http://stackoverflow.com/questions/11418977/parallelogram-navigation-background-with-css
-    display: inline-block;
-    text-decoration:none;
-    padding: 10px 30px;
-    transform: skewX(-50deg);
-    -o-transform: skewX(-50deg);
-    -moz-transform: skewX(-50deg);
-    -webkit-transform: skewX(-50deg);
+nav ul li:hover > ul {
+    display: block;
+}
 
-    & span {
-        display: inline-block;
-        transform: skewX(50deg);
-        -o-transform: skewX(50deg);
-        -moz-transform: skewX(50deg);
-        -webkit-transform: skewX(50deg);
-    }
+// set the styling for the nav bar
+nav ul {
+    background: $color-primary;
+    padding: 0 1rem;
+    list-style: none;
+    position: relative;
+    display: inline-table;
 
-    &:hover {
-        background-color: $color-secondary;
-    }
-
-    &.current-menu-item {
-        background-color: $color-primary;
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
     }
 }
 
-.main-navigation .menu li a {
+nav ul li {
+    float: left;
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    &:hover {
+        background: $color-secondary;
+    }
+}
+
+nav ul li:hover a {
     color: $white;
+}
+
+nav ul li a {
+    display: block;
+    color: $white;
+    padding: 1rem 3rem;
     text-decoration: none;
 }
 
-.menu-item.my-nav-menu-search,
-.main-navigation .menu-item:last-of-type {
-    padding: 7px 10px 10px;
-    max-height: 44px;
-    margin-left: 10px !important;
+// set the styling for the submenu
+nav ul ul {
+    background: $color-secondary;
+    padding: 0;
+    position: absolute;
+    top: 100%;
 }
 
-.main-navigation .menu .menu-item span {
-    &:hover {
-        color: $white;
-    }
-
-    &.screen-reader-text {
-        display: none;
-    }
-}
-
-.main-navigation .menu .menu-item label {
-    display: inline-block;
-    transform: skewX(50deg);
-    -o-transform: skewX(50deg);
-    -moz-transform: skewX(50deg);
-    -webkit-transform: skewX(50deg);
-}
-
-
-// MOBILE MENU
-
-#mobile-menu-switch {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: none
-}
-#mobile-menu-switch .toggle {
-    font-size: 14px;
-    font-size: .875rem;
-    line-height: 60px;
-    display: block;
-    width: 70px;
-    height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $color-background;
-    background-color: $color-primary;
-}
-#mobile-menu-switch .toggle:active {
-    top:0;
-}
-#mobile-menu-switch .toggle.on {
-    border-left: 1px solid #dbdbdb;
-    background-color: $color-background;
-}
-
-// UTILITY MENU
-
-#menu-utility-menu {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 2.0225em;
-    padding-left: 2.0225em;
-}
-
-#menu-utility-menu.menu {
-    display: block;
-    float: left;
-    font-size: 0.8em;
-    padding-left: 0;
-    padding-top: 0.25em;
-    list-style: none;
-}
-
-#menu-utility-menu li {
-    float: left;
-    list-style-type: none;
-    list-style-image: none;
-    margin-left: 2em;
-
-    & a {
-        color: darken(white, 5%);
-        font-weight: 300;
-
-        &:hover {
-            color: $color-accent;
-        }
-    }
-}
-
-#menu-utility-menu li:first-child {
+nav ul ul li {
+    float: none;
+    border-top: 1px solid $color-primary;
     margin-left: 0;
-}
+    position: relative;
 
-// FOOTER LINKS MENU
-
-.footer-links {
-    margin: 0 auto;
-}
-
-.footer-links .menu {
-    list-style: none;
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-
-    & li {
-        float: left;
-        text-transform: uppercase;
-        margin: 0 1em;
-    }
-
-    a {
-        color: $white;
-        font-family: sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-    }
-
-    &:after {
-        @include clearfix;
+    &:last-of-type {
+        border-bottom: 1px solid $color-primary;
     }
 }
 
+nav ul ul li a {
+    padding: 1rem 3rem;
+    color: $white;
 
-#menu-footer-menu .fa-facebook:before {
-    content: "\f09a\00a0\00a0";
+    &:hover {
+        background: darken($color-secondary, 20%);
+    }
 }
-#menu-footer-menu .fa-twitter:before, {
-    content: "\f099\00a0\00a0";
-}
-#menu-footer-menu .fa-file-text:before {
-    content: "\f15c\00a0\00a0";
+
+// set the styling for the sub-submenu
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
 }

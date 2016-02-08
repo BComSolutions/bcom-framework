@@ -9,7 +9,7 @@
 ?>
 
 		</div><!-- .container -->
-	</div><!-- #content -->
+	</section><!-- .site-content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-container">

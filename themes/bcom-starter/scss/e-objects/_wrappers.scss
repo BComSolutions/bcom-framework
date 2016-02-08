@@ -1,133 +1,67 @@
 /**
- * Header wrappers
+ * Main wrappers
  */
 
-.site-header:after,
-.site-content:after,
-.site-footer:before,
-.section:after {
+header:after,
+section:after,
+footer:before,
+.site-content:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.site-header {
+/**
+ * Header wrappers
+ */
+
+header {
     padding-top: 0.5em;
     padding-bottom: 0;
-    border-bottom: 3px solid $color-primary;
     z-index: 9999;
- }
+}
+
+nav {
+    background-color: $color-primary;
+    border: 0;
+}
+
+.screen-reader-text {
+    display: none
+}
 
 /**
  * Page wrappers
  */
 
-.page-title {
-    background-color: $color-primary;
-    color: $white;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.entry-title {
-    margin: 0;
-}
-
-#main {
-    background-color: darken($white, 10%);
-    background-image: url("/wp-content/themes/auburnagency/images/bg-crop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.breadcrumbs {
-    padding-top: 0.5em;
-}
-
 #primary,
 #secondary {
-    background-color: $white;
-}
-
-.content-area,
-.widget-area {
     margin-top: 1em;
-    padding: 1.5em;
 }
 
-.site-content {
-    background-color: $color-background;
+.container {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2em;
+    padding-left: 2em
 }
 
 /**
  * Home page wrappers
  */
 
-.message-center {
-    height: 210px;
-}
-
-.crop-info-center-icons {
-    height: 72px;
-}
-
-.crop-info-center-menu-background {
-    background-color: $color-primary;
-    height: 2.5em;
-    position: relative;
-    top: 170px;
-    z-index: 2;
-}
-
-.crop-info-center-menu {
-    margin-bottom: 0;
-}
-
-.slider-area {
-    border-top: 3px solid $color-primary;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.news-feeds {
-    background-color: $light-grey;
-    border-top: 3px solid $color-primary;
-    padding-bottom: 2em;
-    padding-top: 2em;
-}
-
-.twitter-feed,
-.rss-feeds {
-    background-color: $white;
-    padding: 1em;
-}
-
-.rss-feeds {
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
 /**
  * Footer wrappers
  */
 
-.site-footer {
- 	background-color: $color-primary;
+footer {
+    background-color: $color-primary;
     border-top: 3px solid $color-secondary;
     color: $white;
     padding-top: 1em;
     padding-bottom: 1em;
- }
-
-.site-footer .container {
-    padding-right: 0;
-    padding-left: 0;
- }
+}
 
 .site-info {
     color: $white;
@@ -140,11 +74,7 @@
         color: $white;
 
         &:hover {
-            color: $color-background;
+            color: $color-secondary;
         }
     }
-}
-
-.site-info .container {
-    text-align: center;
 }

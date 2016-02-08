@@ -21,22 +21,20 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'forward' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="header-container">
+	<header role="banner">
+		<div class="container">
 			<div class="site-branding">
 				<h1 class="site-title"><a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<div class="site-description"><?php bloginfo( 'description' ); ?></div>
 			</div><!-- .site-branding -->
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="container">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>
-				</div>
-			</nav><!-- #site-navigation -->
-			<div id="mobile-menu-switch">
-				<a href="" class="toggle">Menu</a>
-			</div>
 		</div><!-- .container -->
-	</header><!-- #masthead -->
+	</header><!-- header -->
 
-	<div id="content" class="site-content">
-		<div class="content-container">
+	<nav class="primary-navigation" role="navigation">
+		<div class="container">
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>
+		</div>
+	</nav><!-- .primary-navigation -->
+
+	<section class="site-content">
+		<div class="container">

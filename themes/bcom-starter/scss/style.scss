@@ -104,17 +104,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "f-components/branding";
 @import "f-components/nav-site";
 @import "f-components/sidebar-nav";
-//@import "f-components/nav-links";
-//@import "f-components/buttons";
-//@import "f-components/forms";
-@import "f-components/slider";
+@import "f-components/nav-links";
 @import "f-components/widgets";
+@import "f-components/buttons";
+@import "f-components/forms";
+@import "f-components/404";
+//@import "f-components/slider";
 //@import "f-components/carousel";
 //@import "f-components/comments";
 //@import "f-components/gallery";
 //@import "f-components/cards";
-@import "f-components/search-icon";
-@import "f-components/tabs";
+//@import "f-components/search-icon";
+//@import "f-components/tabs";
 
 /*
  * Section G
@@ -125,8 +126,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 //@import "g-vendors/gravity-forms";
 //@import "g-vendors/events-calendar";
-@import "g-vendors/easy-twitter-feed";
-@import "g-vendors/hungry-feed";
+//@import "g-vendors/easy-twitter-feed";
+//@import "g-vendors/hungry-feed";
 //@import "g-vendors/master-slider";
 //@import "g-vendors/responsive-tabs";
 //@import "g-vendors/wp-posts-carousel";

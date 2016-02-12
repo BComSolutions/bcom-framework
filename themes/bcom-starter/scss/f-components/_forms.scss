@@ -66,7 +66,7 @@ textarea {
     line-height: 1.77689em;
     margin-top: 1em;
     margin-bottom: 1em;
-    color: $color-primary;
+    color: $color-text;
 }
 
 input[type=color],
@@ -87,9 +87,10 @@ textarea {
     margin-top: .31672em;
     margin-bottom: 1em;
     padding: 6px 8px;
-    border: 1px solid #c5c5c5;
+    border: 1px solid $medium-grey;
     width: 100%
 }
+
 input[type=color]:focus,
 input[type=color]:hover,
 input[type=date]:focus,
@@ -120,24 +121,23 @@ input[type=week]:focus,
 input[type=week]:hover,
 textarea:focus,
 textarea:hover {
-    border-color: #999;
+    border-color: $medium-grey;
     outline: 0
 }
+
 input[type=search] {
     width: auto;
     border-right: none;
 }
+
 input[type=submit] {
-    font-weight: 400;
-    padding: 6px 1.77689em;
-    color: $color-text;
-    border: 1px solid $color-accent;
-    background-color: transparent;
+    @include button-style($color-primary);
 }
+
 input[type=submit]:hover {
-    color: #f9f9f9;
-    background-color: #3185CB
+    @include button-style-hover($color-primary);
 }
+
 input[type=submit]:active {
     position: relative;
     top: 1px;
@@ -145,9 +145,11 @@ input[type=submit]:active {
     bottom: 0;
     left: 0
 }
+
 .post-password-form label {
     margin-top: 1.77689em
 }
+
 .post-password-form input[type=password] {
     margin-top: .75019em
 }

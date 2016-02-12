@@ -9,12 +9,17 @@
     margin: 1em 0;
     padding: 6px 1.77689em;
     border: 1px solid $medium-grey;
-    background-color: transparent;
-    color: $color-text;
+    background-color: $color;
+    color: $white;
     font-family: $font-body;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.77689em;
+}
+
+@mixin button-style-hover($color) {
+    background-color: darken($color, 10%);
+    color: $white;
 }
 
 @mixin font-paragraph() {

@@ -67,14 +67,18 @@ nav {
  * Footer wrappers
  */
 
-footer {
+.b-footer {
     background-color: $color-primary;
     color: $white;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-.site-info {
+.b-footer__container {
+    @include container;
+}
+
+.b-footer__site-info {
     color: $white;
     font-size: .8em;
     width: 100%;

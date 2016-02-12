@@ -11,13 +11,13 @@
 		</div><!-- .container -->
 	</section><!-- .site-content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="footer-container">
-			<div class="site-info">
+	<div class="b-footer" role="contentinfo">
+		<div class="b-footer__container">
+			<div class="b-footer__site-info">
 				&copy; <?php the_date( 'Y' ); ?> <?php bloginfo( 'name' ); ?> | Site powered and designed by <a href="http://bcomonline.com" rel="designer">BCom Solutions, LLC</a>
 			</div><!-- .site-info -->
 		</div>
-	</footer><!-- #colophon -->
+	</div><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

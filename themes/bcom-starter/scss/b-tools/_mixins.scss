@@ -3,6 +3,14 @@
  *
  */
 
+@mixin container() {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2em;
+    padding-left: 2em
+}
+
 @mixin button-style($color) {
     cursor: pointer;
     display: inline-block;

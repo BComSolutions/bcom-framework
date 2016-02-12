@@ -22,7 +22,11 @@ get_header(); ?>
 					<p class="four-oh-four-subheader"><?php _e( "Oops! Something went wrong.", 'bcom' ); ?></p>
 
 					<p class="four-oh-four-text"><?php _e( "You can head back to the Home Page.", 'bcom' ); ?></p>
-					<a href="<?php bloginfo( 'url' ); ?>"><button class="button button--state-sumbit aligncenter">Back to Home Page</button></a>
+					<div class="center-text">
+						<div class="button button--state-sumbit">
+							<a href="<?php bloginfo( 'url' ); ?>">Back to Home Page</a>
+						</div>
+					</div>
 					<br />
 					<p class="four-oh-four-text"><?php _e( "Or maybe try a search?", 'bcom' ); ?></p>
 					<div class="four-oh-four-search"><?php get_search_form(); ?></div>

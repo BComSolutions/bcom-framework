@@ -2,39 +2,42 @@
  * Sets mixins for use across the site
  *
  */
- 
-@mixin border-shadow() {
-  border: 3px solid #fff;
-  box-shadow: 0 0 3px rgba( black, 0.3 );
-  position: relative;
-  z-index: 1;
-}
 
 @mixin button-style($color) {
-  background: $color;
-  border: none;
-  color: $white;
-  display: inline-block;
-  font-weight: 700;
-  line-height: 2em;
-  margin: 1em 0;
-  padding: 0.5em 2em;
-}
-
-@mixin picture-border($color) {
-  border: 10px solid $color;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1em 0;
+    padding: 6px 1.77689em;
+    border: 1px solid $medium-grey;
+    background-color: transparent;
+    color: $color-text;
+    font-family: $font-body;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.77689em;
 }
 
 @mixin font-paragraph() {
-  font-size: $font-size-base;
-  font-family: $font-body;
-  line-height: 1.8;
+    font-size: $font-size-base;
+    font-family: $font-body;
+    line-height: 1.8;
 }
 
 @mixin clearfix() {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+@mixin picture-border($color) {
+    border: 10px solid $color;
+}
+
+@mixin border-shadow() {
+    border: 3px solid #fff;
+    box-shadow: 0 0 3px rgba(black, 0.3);
+    position: relative;
+    z-index: 1;
 }

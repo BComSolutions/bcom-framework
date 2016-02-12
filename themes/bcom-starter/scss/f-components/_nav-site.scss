@@ -21,7 +21,7 @@ nav ul {
     padding: 0;
     list-style: none;
     position: relative;
-    display: inline-table;
+    //display: inline-table;
 
     &:after {
         content: "";
@@ -68,7 +68,7 @@ nav ul ul {
 
 nav ul ul li {
     float: none;
-    border-top: 1px solid $color-primary;
+    border-top: 1px solid darken($color-secondary, 10%);
     margin-left: 0;
     position: relative;
 
@@ -91,4 +91,8 @@ nav ul ul ul {
     position: absolute;
     left: 100%;
     top: 0;
+
+    :first-of-type {
+        top: -1px;
+    }
 }

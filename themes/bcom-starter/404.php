@@ -9,21 +9,25 @@ get_header(); ?>
 
 <section id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area">
+	<div class="content-area">
 
 			<section class="not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( '404', 'bcom' ); ?></h1>
+<!--					<h1 class="page-title">--><?php //_e( '404', 'bcom' ); ?><!--</h1>-->
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( "We couldn't find that. Maybe try another search?", 'bcom' ); ?></p>
 
-					<?php get_search_form(); ?>
+					<h2 class="four-oh-four-header">404</h2>
+					<p class="four-oh-four-subheader"><?php _e( "Oops! Something went wrong.", 'bcom' ); ?></p>
+
+					<p class="four-oh-four-text"><?php _e( "You can head back to the Home Page.", 'bcom' ); ?></p>
+					<a href="<?php bloginfo( 'url' ); ?>"><button class="button button--state-sumbit aligncenter">Back to Home Page</button></a>
+					<br />
+					<p class="four-oh-four-text"><?php _e( "Or maybe try a search?", 'bcom' ); ?></p>
+					<div class="four-oh-four-search"><?php get_search_form(); ?></div>
 				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-	</div><!-- #primary -->
+			</section><!-- .not-found -->
 
 </section><!-- #main -->
 

@@ -36,7 +36,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<div class="entry-footer">
 		<?php bcom_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</div><!-- .entry-footer -->
 </article><!-- #post-## -->

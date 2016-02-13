@@ -342,7 +342,7 @@ h5 {
 /*
  * Styles for links
  *
- * colunderlining follows WordPress accessibility guidelines
+ * underlining follows WordPress accessibility guidelines
  * https://developer.wordpress.org/themes/functionality/accessibility/#link-underlining
  */
 a {
@@ -370,13 +370,13 @@ html {
 /**
  * Main wrappers
  */
-header:after,
-section:after,
-footer:before,
-.site-content:after {
+header:after::after,
+section:after::after,
+footer:before::after,
+.site-content:after::after {
+  clear: both;
   content: "";
-  display: table;
-  clear: both; }
+  display: table; }
 
 /**
  * Header wrappers

@@ -1,18 +1,19 @@
 html {
     box-sizing: border-box;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
 *,
 ::after,
 ::before {
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
+
 article,
 aside,
 details,
@@ -26,27 +27,27 @@ menu,
 nav,
 section,
 summary {
-    display: block
+    display: block;
 }
 
 audio:not([controls]) {
     display: none;
-    height: 0
+    height: 0;
 }
 
 [hidden],
 template {
-    display: none
+    display: none;
 }
 
 hr,
 input[type=search] {
-    box-sizing: content-box
+    box-sizing: content-box;
 }
 
 pre,
 textarea {
-    overflow: auto
+    overflow: auto;
 }
 
 embed,
@@ -55,11 +56,11 @@ img,
 object,
 pre,
 video {
-    max-width: 100%
+    max-width: 100%;
 }
 
 optgroup {
-    font-weight: 700
+    font-weight: 700;
 }
 
 a,
@@ -147,40 +148,45 @@ video {
     padding: 0;
     border: 0;
     font: inherit;
-    vertical-align: baseline
+    vertical-align: baseline;
 }
+
 small,
 sub,
 sup {
-    font-size: 75%
+    font-size: 75%;
 }
+
 address,
 blockquote,
 blockquote p,
 dd,
 dl,
 p {
-    margin-bottom: 1em
+    margin-bottom: 1em;
 }
+
 blockquote,
 q {
-    quotes: none
+    quotes: none;
 }
+
 blockquote:after,
 blockquote:before,
 q:after,
 q:before {
-    content: none
+    content: none;
 }
+
 table {
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 body,
 div,
 p {
-    font-family: $font-body;
+    @include font-paragraph;
 }
 
 // CUSTOM elements
@@ -193,5 +199,5 @@ li {
 }
 
 a:hover {
-    color: $color-secondary;
+    color: darken($color-text, $darken-percentage);
 }

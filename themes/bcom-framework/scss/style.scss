@@ -21,6 +21,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
 /*
+ * VISUAL GRID
+ * optional visual grid overlay for use in development (from Bourbon Neat)
+ */
+ $visual-grid: true !global;
+
+/*
  * Section A
  * SETTINGS
  * This layer should only house settings that need to be accessed from anywhere, including Sass variables.

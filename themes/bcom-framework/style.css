@@ -11,947 +11,293 @@ Text Domain: bcom
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-/*
- * This theme uses the Inverted Triangle CSS method of organization with Sass
- * http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
- * and
- * follows the 10up Engineering Best Practices
- * https://10up.github.io/Engineering-Best-Practices/
- *
- */
-/*
- * Section A
- * SETTINGS
- * This layer should only house settings that need to be accessed from anywhere, including Sass variables.
- * Examples of global settings might be things like the base font size, color palettes, and so on.
- *
- */
-/*
- * Set the colors for the site based on the style tiles
- *
- */
+/* This theme uses the Inverted Triangle CSS method of organization with Sass http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528 and follows the 10up Engineering Best Practices https://10up.github.io/Engineering-Best-Practices/  */
+/* VISUAL GRID optional visual grid overlay for use in development (from Bourbon Neat) */
+/* Section A SETTINGS This layer should only house settings that need to be accessed from anywhere, including Sass variables. Examples of global settings might be things like the base font size, color palettes, and so on.  */
+/* Set the colors for the site based on the style tiles  */
 /*blue*/
 /*green*/
 /*yellow*/
 /*white*/
 /*dark gray*/
-/*
- * Set fonts for the theme
- * (enqueue them in the functions.php file)
- *
- */
-/*
- * Section B
- * TOOLS
- * This layer should include global mixins and functions.
- * Any mixin or function that does not need accessing globally should belong in the partial to which it relates.
- *
- */
-/*
- * Sets mixins for use across the site
- *
- */
-/*
- * Section C
- * GENERIC
- * The Generic layer is the first one that actually produces any CSS.
- * It houses very high-level, far reaching styles.
- * This layer is seldom modified, and is usually the same across any projects you work on.
- * It contains things like Normalize.css, global box-sizing rules, CSS resets and so on.
- *
- * Reset.css un-styles every element.
- * Normalize.css styles browsers to render elements more consistently with each other.
- * Sanitize.css styles browsers to render elements more consistently with developer expectations and preferences.
- *
- * NOTE: You probably only need one of the following...
- *
- */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* Set fonts for the theme (enqueue them in the functions.php file)  */
+/* Section B TOOLS This layer should include global mixins and functions. Any mixin or function that does not need accessing globally should belong in the partial to which it relates.  */
+/* Sets mixins for use across the site  */
+/* Section C GENERIC The Generic layer is the first one that actually produces any CSS. It houses very high-level, far reaching styles. This layer is seldom modified, and is usually the same across any projects you work on. It contains things like Normalize.css, global box-sizing rules, CSS resets and so on.  Reset.css un-styles every element. Normalize.css styles browsers to render elements more consistently with each other. Sanitize.css styles browsers to render elements more consistently with developer expectations and preferences.  NOTE: You probably only need one of the following...  */
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
 */
-/*
- * Sanitize.css styles browsers to render elements more consistently with developer expectations and preferences.
- * Normalize.css styles browsers to render elements more consistently with each other.
- * Reset.css unstyles every element.
- *
- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+/* Sanitize.css styles browsers to render elements more consistently with developer expectations and preferences. Normalize.css styles browsers to render elements more consistently with each other. Reset.css unstyles every element.  */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/*
- * Section D
- * ELEMENTS
- * These are bare, unclassed HTML elements.
- * It is very rarely added to or changed after initial setup.
- * Once we have defined element-level styles, all additions and deviations should be implemented using classes.
- *
- */
-html {
-  box-sizing: border-box;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-*,
-::after,
-::before {
-  box-sizing: inherit; }
-
-body {
-  margin: 0; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden],
-template {
-  display: none; }
-
-hr,
-input[type=search] {
-  box-sizing: content-box; }
-
-pre,
-textarea {
-  overflow: auto; }
-
-embed,
-iframe,
-img,
-object,
-pre,
-video {
-  max-width: 100%; }
-
-optgroup {
-  font-weight: 700; }
-
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline; }
-
-small,
-sub,
-sup {
-  font-size: 75%; }
-
-address,
-blockquote,
-blockquote p,
-dd,
-dl,
-p {
-  margin-bottom: 1em; }
-
-blockquote,
-q {
-  quotes: none; }
-
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-body,
-div,
-p {
-  font-size: 18px;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  line-height: 1.8; }
-
-li {
-  margin-left: 2em; }
-  li:last-of-type {
-    margin-bottom: 1em; }
-
-/*
- * Heading styles
- *
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  color: #5d8ac7;
-  font-family: "Lato", Helvetica, sans-serif; }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    text-decoration: none; }
-    h1 a :hover, h2 a :hover, h3 a :hover, h4 a :hover, h5 a :hover, h6 a :hover {
-      color: #8bc53f; }
-
-h1 {
-  font-size: 36px;
-  text-transform: uppercase; }
-
-h2 {
-  font-size: 31.5px; }
-
-h3 {
-  font-size: 27px;
-  font-style: italic; }
-
-h4 {
-  font-size: 22.5px;
-  text-transform: uppercase; }
-
-h5 {
-  font-style: italic; }
-
-/*
- * Styles for links
- *
- * underlining follows WordPress accessibility guidelines
- * https://developer.wordpress.org/themes/functionality/accessibility/#link-underlining
- */
-a {
-  background-color: transparent;
-  text-decoration: underline;
-  color: inherit; }
-  a:active, a:hover {
-    color: #7eb436;
-    outline: 0;
-    text-decoration: none; }
-
-/*
- * OBJECTS
- * This is the first layer in which we find class-based selectors.
- * These are concerned with styling non-cosmetic design patterns, or 'objects'.
- * Objects can range from something as simple as a .wrapper element, to layout systems, to media objects.
- *
- */
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
-/**
- * Main wrappers
- */
-header:after::after,
-section:after::after,
-footer:before::after,
-.site-content:after::after {
-  clear: both;
-  content: "";
-  display: table; }
-
-/**
- * Header wrappers
- */
-header {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  z-index: 9999; }
-
-nav {
-  background-color: #5d8ac7;
-  border: 0; }
-
-.screen-reader-text {
-  display: none; }
-
-/**
- * Page wrappers
- */
-.site-main {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .site-main::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-#primary,
-#secondary {
-  margin-top: 1em; }
-
-#primary {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 65.95745%; }
-  #primary:last-child {
-    margin-right: 0; }
-
-#secondary {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 31.91489%; }
-  #secondary:last-child {
-    margin-right: 0; }
-
-.container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 2em;
-  padding-left: 2em; }
-
-/**
- * Home page wrappers
- */
-/**
- * Footer wrappers
- */
-footer {
-  background-color: #5d8ac7;
-  color: #ffffff;
-  padding-top: 1em;
-  padding-bottom: 1em; }
-
-.site-info {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 2em;
-  padding-left: 2em;
-  color: #ffffff;
-  font-size: .8em;
-  width: 100%;
-  padding: .5em 0;
-  text-align: center; }
-  .site-info a {
-    color: #ffffff; }
-    .site-info a:hover {
-      color: #8bc53f; }
-
-/*
- * Style for media objects
- *
- */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline; }
-
-/*
- * Section F
- * COMPONENTS
- * The Components layer is where we begin to style recognizable pieces of UI.
- * We shouldn't find any selectors with a lower specificity than one class in this layer.
- * This is where the majority of your work will happen after initial project set-up.
- * Adding new components and features usually makes up the vast majority of development.
- *
- */
-/*
- * Style for the brand info in the header area of the site
- * Note: .site-header is found in the _wrappers.scss file
- * 
- */
-.site-branding img {
-  max-height: 8em;
-  margin-right: 2em; }
-
-.site-logo {
-  text-decoration: none; }
-
-/*
- * Style for the nav menus
- *
- */
-nav ul ul {
-  display: none; }
-
-nav ul li:hover > ul {
-  display: block; }
-
-nav ul {
-  background: #5d8ac7;
-  padding: 0;
-  list-style: none;
-  position: relative; }
-  nav ul:after {
-    content: "";
-    clear: both;
-    display: block; }
-
-nav ul li {
-  float: left; }
-  nav ul li:first-of-type {
-    margin-left: 0; }
-  nav ul li:last-of-type {
-    margin-bottom: 0;
-    margin-right: 0; }
-  nav ul li:hover {
-    background: #8bc53f; }
-
-nav ul li:hover a {
-  color: #ffffff; }
-
-nav ul li a {
-  display: block;
-  color: #ffffff;
-  padding: 1rem 3rem;
-  text-decoration: none; }
-
-nav ul ul {
-  background: #8bc53f;
-  padding: 0;
-  position: absolute;
-  top: 100%; }
-
-nav ul ul li {
-  float: none;
-  border-top: 1px solid #7eb436;
-  margin-left: 0;
-  position: relative; }
-  nav ul ul li:last-of-type {
-    border-bottom: 1px solid #5d8ac7; }
-
-nav ul ul li a {
-  padding: 1rem 3rem;
-  color: #ffffff;
-  text-align: center; }
-  nav ul ul li a:hover {
-    background: #7eb436; }
-
-nav ul ul ul {
-  position: absolute;
-  left: 100%;
-  top: 0; }
-  nav ul ul ul :first-of-type {
-    top: -1px; }
-
-#menu-sidebar-menu li,
-#menu-sidebar-menu li.menu-item-has-children {
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #ffd454;
-  color: #ffffff;
-  line-height: 1;
-  margin-bottom: 0.7em;
-  padding: 1em;
-  position: relative; }
-  #menu-sidebar-menu li a,
-  #menu-sidebar-menu li.menu-item-has-children a {
-    color: #ffffff;
-    text-decoration: none; }
-#menu-sidebar-menu .current-menu-item {
-  background-color: #5d8ac7;
-  color: #8bc53f;
-  line-height: 1; }
-
-#menu-sidebar-menu .sub-menu {
-  display: none; }
-  #menu-sidebar-menu .sub-menu li:hover {
-    background-color: #8bc53f; }
-  #menu-sidebar-menu .sub-menu li:first-of-type {
-    margin-top: 0.5em; }
-
-#menu-sidebar-menu > .current-menu-item .sub-menu {
-  display: block; }
-
-#menu-sidebar-menu > .current-menu-parent .sub-menu {
-  display: block; }
-
-/*
- * Styles for the prev/next post navigation links
- *
- */
-.nav-links {
-  display: block;
-  line-height: 1.333em; }
-
-.nav-links::after {
-  clear: both;
-  display: table;
-  content: ""; }
-
-.nav-links .nav-next {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  text-align: right; }
-
-.nav-links .nav-next:last-child {
-  margin-right: 0; }
-
-.nav-links .nav-previous {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
-
-.nav-links .nav-previous:last-child {
-  margin-right: 0; }
-
-.nav-links .nav-previous + .nav-next {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
-
-.nav-links .nav-previous + .nav-next:last-child {
-  margin-right: 0; }
-
-.post-navigation {
-  background-color: transparent; }
-
-.widget {
-  border-bottom: none; }
-
-.info-widgets .widget:last-child {
-  margin-top: 0; }
-
-.rss-feeds h1 {
-  font-size: 2em; }
-.rss-feeds img {
-  display: none; }
-
-.rss-feeds .widget-title {
-  margin: 0 0 0.5em 0; }
-
-.rss-feeds ul li {
-  margin-bottom: 1em; }
-
-.left.col {
-  padding-right: 2em; }
-
-.market-data {
-  margin-top: 1.3em; }
-
-.footer-block aside {
-  padding-left: 0.7em; }
-
-.footer-widget-title {
-  text-transform: uppercase; }
-
-.fat-footer-one,
-.fat-footer-two,
-.fat-footer-three,
-.fat-footer-four {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 0;
-  text-align: center; }
-
-.fat-footer .widget_sp_image {
-  float: left;
-  padding-bottom: 0; }
-
-.fat-footer .fa-stack {
-  float: left;
-  margin-right: 0.5em; }
-
-.fat-footer .textwidget a {
-  color: #ffffff;
-  text-decoration: none; }
-  .fat-footer .textwidget a:hover {
-    text-decoration: underline; }
-
-/*
- * Styles for buttons
- *
- */
-button,
-.button,
-.button-primary {
-  cursor: pointer;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 6px 1.77689em;
-  border: 1px solid #c5c5c5;
-  background-color: #5d8ac7;
-  color: #ffffff;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.77689em; }
-  button :hover,
-  .button :hover,
-  .button-primary :hover {
-    background-color: #4a7cc0;
-    color: #ffffff; }
-  button:hover,
-  .button:hover,
-  .button-primary:hover {
-    background-color: #4a7cc0;
-    color: #ffffff; }
-
-button a,
-.button a {
-  color: #ffffff;
-  text-decoration: none; }
-
-.button-secondary,
-.button-secondary a {
-  cursor: pointer;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 6px 1.77689em;
-  border: 1px solid #c5c5c5;
-  background-color: #8bc53f;
-  color: #ffffff;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.77689em; }
-  .button-secondary :hover,
-  .button-secondary a :hover {
-    background-color: #7eb436;
-    color: #ffffff; }
-  .button-secondary:hover,
-  .button-secondary a:hover {
-    background-color: #7eb436;
-    color: #ffffff; }
-
-.button-accent,
-.button-accent a {
-  cursor: pointer;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 6px 1.77689em;
-  border: 1px solid #c5c5c5;
-  background-color: #ffd454;
-  color: #ffffff;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.77689em; }
-  .button-accent :hover,
-  .button-accent a :hover {
-    background-color: #ffce3b;
-    color: #ffffff; }
-  .button-accent:hover,
-  .button-accent a:hover {
-    background-color: #ffce3b;
-    color: #ffffff; }
-
-/*
- * Styles for forms
- *
- */
-html input[disabled] {
-  cursor: default; }
-
-input[type=reset],
-input[type=submit] {
-  cursor: pointer; }
-
-input[type=checkbox],
-input[type=radio] {
-  box-sizing: border-box;
-  padding: 0; }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  height: auto; }
-
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-input[type=color],
-input[type=date],
-input[type=datetime-local],
-input[type=datetime],
-input[type=email],
-input[type=month],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=text],
-input[type=time],
-input[type=url],
-input[type=week],
-textarea {
-  border-radius: 0;
-  -webkit-appearance: none; }
-
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-select {
-  text-transform: none; }
-
-input,
-select,
-textarea {
-  font-weight: 400;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1em;
-  line-height: 1.77689em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  color: #6d6d6d; }
-
-input[type=color],
-input[type=date],
-input[type=datetime-local],
-input[type=datetime],
-input[type=email],
-input[type=month],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=text],
-input[type=time],
-input[type=url],
-input[type=week],
-textarea {
-  margin-top: .31672em;
-  margin-bottom: 1em;
-  padding: 6px 8px;
-  border: 1px solid #c5c5c5;
-  width: 100%; }
-
-input[type=color]:focus,
-input[type=color]:hover,
-input[type=date]:focus,
-input[type=date]:hover,
-input[type=datetime-local]:focus,
-input[type=datetime-local]:hover,
-input[type=datetime]:focus,
-input[type=datetime]:hover,
-input[type=email]:focus,
-input[type=email]:hover,
-input[type=month]:focus,
-input[type=month]:hover,
-input[type=number]:focus,
-input[type=number]:hover,
-input[type=password]:focus,
-input[type=password]:hover,
-input[type=search]:focus,
-input[type=search]:hover,
-input[type=tel]:focus,
-input[type=tel]:hover,
-input[type=text]:focus,
-input[type=text]:hover,
-input[type=time]:focus,
-input[type=time]:hover,
-input[type=url]:focus,
-input[type=url]:hover,
-input[type=week]:focus,
-input[type=week]:hover,
-textarea:focus,
-textarea:hover {
-  border-color: #c5c5c5;
-  outline: 0; }
-
-input[type=search] {
-  width: auto;
-  border-right: none; }
-
-input[type=submit] {
-  cursor: pointer;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 6px 1.77689em;
-  border: 1px solid #c5c5c5;
-  background-color: #5d8ac7;
-  color: #ffffff;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.77689em; }
-  input[type=submit] :hover {
-    background-color: #4a7cc0;
-    color: #ffffff; }
-
-input[type=submit]:hover {
-  background-color: #4a7cc0;
-  color: #ffffff; }
-
-input[type=submit]:active {
-  position: relative;
-  top: 1px;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
-.post-password-form label {
-  margin-top: 1.77689em; }
-
-.post-password-form input[type=password] {
-  margin-top: 0.75019em; }
-
-.four-oh-four-header {
-  font-size: 10em;
-  text-align: center; }
-
-.four-oh-four-subheader {
-  font-size: 4em;
-  text-align: center; }
-
-.four-oh-four-text {
-  font-size: 2em;
-  text-align: center; }
-
-.four-oh-four-search {
-  margin-bottom: 5em;
-  text-align: center; }
-
-/*
- * Section G
- * VENDORS
- * This layer addresses styling specific to vendor plugins, such as Gravity Forms or The Events Calendar.
- * It has the power to override anything at all that has gone before it.
- *
- */
-/*
- * Section H
- * TRUMPS
- * This layer beats – or 'trumps' – all other layers.
- * It has the power to override anything at all that has gone before it.
- * It is inelegant and heavy-handed, and contains utility and helper classes, hacks and overrides.
- * The !important tags should go here.
- *
- */
-span.highlight-green {
-  background-color: #cfdcee; }
-
-span.highlight-yellow {
-  background-color: #d2e8b5; }
-
-/*# sourceMappingURL=style.css.map */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Section D ELEMENTS These are bare, unclassed HTML elements. It is very rarely added to or changed after initial setup. Once we have defined element-level styles, all additions and deviations should be implemented using classes.  */
+html { box-sizing: border-box; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+
+*, ::after, ::before { box-sizing: inherit; }
+
+body { margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+audio:not([controls]) { display: none; height: 0; }
+
+[hidden], template { display: none; }
+
+hr, input[type=search] { box-sizing: content-box; }
+
+pre, textarea { overflow: auto; }
+
+embed, iframe, img, object, pre, video { max-width: 100%; }
+
+optgroup { font-weight: 700; }
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video { margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; }
+
+small, sub, sup { font-size: 75%; }
+
+address, blockquote, blockquote p, dd, dl, p { margin-bottom: 1em; }
+
+blockquote, q { quotes: none; }
+
+blockquote:after, blockquote:before, q:after, q:before { content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+body, div, p { font-size: 18px; font-family: "Open Sans", Helvetica, sans-serif; line-height: 1.8; }
+
+li { margin-left: 2em; }
+li:last-of-type { margin-bottom: 1em; }
+
+/* Heading styles  */
+h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #5d8ac7; font-family: "Lato", Helvetica, sans-serif; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
+h1 a :hover, h2 a :hover, h3 a :hover, h4 a :hover, h5 a :hover, h6 a :hover { color: #8bc53f; }
+
+h1 { font-size: 36px; text-transform: uppercase; }
+
+h2 { font-size: 31.5px; }
+
+h3 { font-size: 27px; font-style: italic; }
+
+h4 { font-size: 22.5px; text-transform: uppercase; }
+
+h5 { font-style: italic; }
+
+/* Styles for links  underlining follows WordPress accessibility guidelines https://developer.wordpress.org/themes/functionality/accessibility/#link-underlining */
+a { background-color: transparent; text-decoration: underline; color: inherit; }
+a:active, a:hover { color: #7eb436; outline: 0; text-decoration: none; }
+
+/* OBJECTS This is the first layer in which we find class-based selectors. These are concerned with styling non-cosmetic design patterns, or 'objects'. Objects can range from something as simple as a .wrapper element, to layout systems, to media objects.  */
+html { box-sizing: border-box; }
+
+*, *::after, *::before { box-sizing: inherit; }
+
+body:before { background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); content: ""; display: inline-block; height: 100%; left: 0; margin: 0 auto; max-width: 1200px; opacity: 0.4; pointer-events: none; position: fixed; right: 0; width: 100%; z-index: -1; }
+@media screen and (max-width: 1025px) { body:before { background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.3829787234%, transparent 6.3829787234%, transparent 8.5106382979%, #eee 8.5106382979%, #eee 14.8936170213%, transparent 14.8936170213%, transparent 17.0212765957%, #eee 17.0212765957%, #eee 23.4042553191%, transparent 23.4042553191%, transparent 25.5319148936%, #eee 25.5319148936%, #eee 31.914893617%, transparent 31.914893617%, transparent 34.0425531915%, #eee 34.0425531915%, #eee 40.4255319149%, transparent 40.4255319149%, transparent 42.5531914894%, #eee 42.5531914894%, #eee 48.9361702128%, transparent 48.9361702128%, transparent 51.0638297872%, #eee 51.0638297872%, #eee 57.4468085106%, transparent 57.4468085106%, transparent 59.5744680851%, #eee 59.5744680851%, #eee 65.9574468085%, transparent 65.9574468085%, transparent 68.085106383%, #eee 68.085106383%, #eee 74.4680851064%, transparent 74.4680851064%, transparent 76.5957446809%, #eee 76.5957446809%, #eee 82.9787234043%, transparent 82.9787234043%, transparent 85.1063829787%, #eee 85.1063829787%, #eee 91.4893617021%, transparent 91.4893617021%, transparent 93.6170212766%, #eee 93.6170212766%, #eee 100.0%, transparent 100.0%); } }
+@media screen and (max-width: 768px) { body:before { background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 9.6774193548%, transparent 9.6774193548%, transparent 12.9032258065%, #eee 12.9032258065%, #eee 22.5806451613%, transparent 22.5806451613%, transparent 25.8064516129%, #eee 25.8064516129%, #eee 35.4838709677%, transparent 35.4838709677%, transparent 38.7096774194%, #eee 38.7096774194%, #eee 48.3870967742%, transparent 48.3870967742%, transparent 51.6129032258%, #eee 51.6129032258%, #eee 61.2903225806%, transparent 61.2903225806%, transparent 64.5161290323%, #eee 64.5161290323%, #eee 74.1935483871%, transparent 74.1935483871%, transparent 77.4193548387%, #eee 77.4193548387%, #eee 87.0967741935%, transparent 87.0967741935%, transparent 90.3225806452%, #eee 90.3225806452%, #eee 100.0%, transparent 100.0%); background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 9.6774193548%, transparent 9.6774193548%, transparent 12.9032258065%, #eee 12.9032258065%, #eee 22.5806451613%, transparent 22.5806451613%, transparent 25.8064516129%, #eee 25.8064516129%, #eee 35.4838709677%, transparent 35.4838709677%, transparent 38.7096774194%, #eee 38.7096774194%, #eee 48.3870967742%, transparent 48.3870967742%, transparent 51.6129032258%, #eee 51.6129032258%, #eee 61.2903225806%, transparent 61.2903225806%, transparent 64.5161290323%, #eee 64.5161290323%, #eee 74.1935483871%, transparent 74.1935483871%, transparent 77.4193548387%, #eee 77.4193548387%, #eee 87.0967741935%, transparent 87.0967741935%, transparent 90.3225806452%, #eee 90.3225806452%, #eee 100.0%, transparent 100.0%); background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 9.6774193548%, transparent 9.6774193548%, transparent 12.9032258065%, #eee 12.9032258065%, #eee 22.5806451613%, transparent 22.5806451613%, transparent 25.8064516129%, #eee 25.8064516129%, #eee 35.4838709677%, transparent 35.4838709677%, transparent 38.7096774194%, #eee 38.7096774194%, #eee 48.3870967742%, transparent 48.3870967742%, transparent 51.6129032258%, #eee 51.6129032258%, #eee 61.2903225806%, transparent 61.2903225806%, transparent 64.5161290323%, #eee 64.5161290323%, #eee 74.1935483871%, transparent 74.1935483871%, transparent 77.4193548387%, #eee 77.4193548387%, #eee 87.0967741935%, transparent 87.0967741935%, transparent 90.3225806452%, #eee 90.3225806452%, #eee 100.0%, transparent 100.0%); background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 9.6774193548%, transparent 9.6774193548%, transparent 12.9032258065%, #eee 12.9032258065%, #eee 22.5806451613%, transparent 22.5806451613%, transparent 25.8064516129%, #eee 25.8064516129%, #eee 35.4838709677%, transparent 35.4838709677%, transparent 38.7096774194%, #eee 38.7096774194%, #eee 48.3870967742%, transparent 48.3870967742%, transparent 51.6129032258%, #eee 51.6129032258%, #eee 61.2903225806%, transparent 61.2903225806%, transparent 64.5161290323%, #eee 64.5161290323%, #eee 74.1935483871%, transparent 74.1935483871%, transparent 77.4193548387%, #eee 77.4193548387%, #eee 87.0967741935%, transparent 87.0967741935%, transparent 90.3225806452%, #eee 90.3225806452%, #eee 100.0%, transparent 100.0%); background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 9.6774193548%, transparent 9.6774193548%, transparent 12.9032258065%, #eee 12.9032258065%, #eee 22.5806451613%, transparent 22.5806451613%, transparent 25.8064516129%, #eee 25.8064516129%, #eee 35.4838709677%, transparent 35.4838709677%, transparent 38.7096774194%, #eee 38.7096774194%, #eee 48.3870967742%, transparent 48.3870967742%, transparent 51.6129032258%, #eee 51.6129032258%, #eee 61.2903225806%, transparent 61.2903225806%, transparent 64.5161290323%, #eee 64.5161290323%, #eee 74.1935483871%, transparent 74.1935483871%, transparent 77.4193548387%, #eee 77.4193548387%, #eee 87.0967741935%, transparent 87.0967741935%, transparent 90.3225806452%, #eee 90.3225806452%, #eee 100.0%, transparent 100.0%); } }
+@media screen and (max-width: 480px) { body:before { background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.6666666667%, #eee 26.6666666667%, #eee 46.6666666667%, transparent 46.6666666667%, transparent 53.3333333333%, #eee 53.3333333333%, #eee 73.3333333333%, transparent 73.3333333333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%); background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.6666666667%, #eee 26.6666666667%, #eee 46.6666666667%, transparent 46.6666666667%, transparent 53.3333333333%, #eee 53.3333333333%, #eee 73.3333333333%, transparent 73.3333333333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%); background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.6666666667%, #eee 26.6666666667%, #eee 46.6666666667%, transparent 46.6666666667%, transparent 53.3333333333%, #eee 53.3333333333%, #eee 73.3333333333%, transparent 73.3333333333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%); background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.6666666667%, #eee 26.6666666667%, #eee 46.6666666667%, transparent 46.6666666667%, transparent 53.3333333333%, #eee 53.3333333333%, #eee 73.3333333333%, transparent 73.3333333333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%); background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 20%, transparent 20%, transparent 26.6666666667%, #eee 26.6666666667%, #eee 46.6666666667%, transparent 46.6666666667%, transparent 53.3333333333%, #eee 53.3333333333%, #eee 73.3333333333%, transparent 73.3333333333%, transparent 80%, #eee 80%, #eee 100%, transparent 100%); } }
+
+/** Main wrappers */
+header:after::after, section:after::after, footer:before::after, .site-content:after::after { clear: both; content: ""; display: table; }
+
+/** Header wrappers */
+header { padding-top: 0.5em; padding-bottom: 0.5em; z-index: 9999; }
+
+nav { background-color: #5d8ac7; border: 0; }
+
+.screen-reader-text { display: none; }
+
+/** Page wrappers */
+.site-main { max-width: 1200px; margin-left: auto; margin-right: auto; }
+.site-main::after { clear: both; content: ""; display: table; }
+
+#primary, #secondary { margin-top: 1em; }
+
+#primary { float: left; display: block; margin-right: 2.1276595745%; width: 65.9574468085%; }
+#primary:last-child { margin-right: 0; }
+
+#secondary { float: left; display: block; margin-right: 2.1276595745%; width: 31.914893617%; }
+#secondary:last-child { margin-right: 0; }
+
+.container { max-width: 68em; margin-left: auto; margin-right: auto; padding-right: 2em; padding-left: 2em; }
+
+/** Home page wrappers */
+/** Footer wrappers */
+footer { background-color: #5d8ac7; color: #ffffff; padding-top: 1em; padding-bottom: 1em; }
+
+.site-info { max-width: 68em; margin-left: auto; margin-right: auto; padding-right: 2em; padding-left: 2em; color: #ffffff; font-size: .8em; width: 100%; padding: .5em 0; text-align: center; }
+.site-info a { color: #ffffff; }
+.site-info a:hover { color: #8bc53f; }
+
+/* Style for media objects  */
+audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
+
+/* Section F COMPONENTS The Components layer is where we begin to style recognizable pieces of UI. We shouldn't find any selectors with a lower specificity than one class in this layer. This is where the majority of your work will happen after initial project set-up. Adding new components and features usually makes up the vast majority of development.  */
+/* Style for the brand info in the header area of the site Note: .site-header is found in the _wrappers.scss file  */
+.site-branding img { max-height: 8em; margin-right: 2em; }
+
+.site-logo { text-decoration: none; }
+
+/* Style for the nav menus  */
+nav ul ul { display: none; }
+
+nav ul li:hover > ul { display: block; }
+
+nav ul { background: #5d8ac7; padding: 0; list-style: none; position: relative; }
+nav ul:after { content: ""; clear: both; display: block; }
+
+nav ul li { float: left; }
+nav ul li:first-of-type { margin-left: 0; }
+nav ul li:last-of-type { margin-bottom: 0; margin-right: 0; }
+nav ul li:hover { background: #8bc53f; }
+
+nav ul li:hover a { color: #ffffff; }
+
+nav ul li a { display: block; color: #ffffff; padding: 1rem 3rem; text-decoration: none; }
+
+nav ul ul { background: #8bc53f; padding: 0; position: absolute; top: 100%; }
+
+nav ul ul li { float: none; border-top: 1px solid #7eb436; margin-left: 0; position: relative; }
+nav ul ul li:last-of-type { border-bottom: 1px solid #5d8ac7; }
+
+nav ul ul li a { padding: 1rem 3rem; color: #ffffff; text-align: center; }
+nav ul ul li a:hover { background: #7eb436; }
+
+nav ul ul ul { position: absolute; left: 100%; top: 0; }
+nav ul ul ul :first-of-type { top: -1px; }
+
+#menu-sidebar-menu li, #menu-sidebar-menu li.menu-item-has-children { text-transform: uppercase; text-decoration: none; background-color: #ffd454; color: #ffffff; line-height: 1; margin-bottom: 0.7em; padding: 1em; position: relative; }
+#menu-sidebar-menu li a, #menu-sidebar-menu li.menu-item-has-children a { color: #ffffff; text-decoration: none; }
+#menu-sidebar-menu .current-menu-item { background-color: #5d8ac7; color: #8bc53f; line-height: 1; }
+
+#menu-sidebar-menu .sub-menu { display: none; }
+#menu-sidebar-menu .sub-menu li:hover { background-color: #8bc53f; }
+#menu-sidebar-menu .sub-menu li:first-of-type { margin-top: 0.5em; }
+
+#menu-sidebar-menu > .current-menu-item .sub-menu { display: block; }
+
+#menu-sidebar-menu > .current-menu-parent .sub-menu { display: block; }
+
+/* Styles for the prev/next post navigation links  */
+.nav-links { display: block; line-height: 1.333em; }
+
+.nav-links::after { clear: both; display: table; content: ""; }
+
+.nav-links .nav-next { float: left; display: block; margin-right: 2.35765%; width: 100%; text-align: right; }
+
+.nav-links .nav-next:last-child { margin-right: 0; }
+
+.nav-links .nav-previous { float: left; display: block; margin-right: 2.35765%; width: 48.82117%; }
+
+.nav-links .nav-previous:last-child { margin-right: 0; }
+
+.nav-links .nav-previous + .nav-next { float: left; display: block; margin-right: 2.35765%; width: 48.82117%; }
+
+.nav-links .nav-previous + .nav-next:last-child { margin-right: 0; }
+
+.post-navigation { background-color: transparent; }
+
+.widget { border-bottom: none; }
+
+.info-widgets .widget:last-child { margin-top: 0; }
+
+.rss-feeds h1 { font-size: 2em; }
+.rss-feeds img { display: none; }
+
+.rss-feeds .widget-title { margin: 0 0 0.5em 0; }
+
+.rss-feeds ul li { margin-bottom: 1em; }
+
+.left.col { padding-right: 2em; }
+
+.market-data { margin-top: 1.3em; }
+
+.footer-block aside { padding-left: 0.7em; }
+
+.footer-widget-title { text-transform: uppercase; }
+
+.fat-footer-one, .fat-footer-two, .fat-footer-three, .fat-footer-four { margin-bottom: 0; margin-top: 0; padding-top: 0; text-align: center; }
+
+.fat-footer .widget_sp_image { float: left; padding-bottom: 0; }
+
+.fat-footer .fa-stack { float: left; margin-right: 0.5em; }
+
+.fat-footer .textwidget a { color: #ffffff; text-decoration: none; }
+.fat-footer .textwidget a:hover { text-decoration: underline; }
+
+/* Styles for buttons  */
+button, .button, .button-primary { cursor: pointer; display: inline-block; margin: 1em 0; padding: 6px 1.77689em; border: 1px solid #c5c5c5; background-color: #5d8ac7; color: #ffffff; font-family: "Open Sans", Helvetica, sans-serif; font-size: 1em; font-weight: 400; line-height: 1.77689em; }
+button :hover, .button :hover, .button-primary :hover { background-color: #4a7cc0; color: #ffffff; }
+button:hover, .button:hover, .button-primary:hover { background-color: #4a7cc0; color: #ffffff; }
+
+button a, .button a { color: #ffffff; text-decoration: none; }
+
+.button-secondary, .button-secondary a { cursor: pointer; display: inline-block; margin: 1em 0; padding: 6px 1.77689em; border: 1px solid #c5c5c5; background-color: #8bc53f; color: #ffffff; font-family: "Open Sans", Helvetica, sans-serif; font-size: 1em; font-weight: 400; line-height: 1.77689em; }
+.button-secondary :hover, .button-secondary a :hover { background-color: #7eb436; color: #ffffff; }
+.button-secondary:hover, .button-secondary a:hover { background-color: #7eb436; color: #ffffff; }
+
+.button-accent, .button-accent a { cursor: pointer; display: inline-block; margin: 1em 0; padding: 6px 1.77689em; border: 1px solid #c5c5c5; background-color: #ffd454; color: #ffffff; font-family: "Open Sans", Helvetica, sans-serif; font-size: 1em; font-weight: 400; line-height: 1.77689em; }
+.button-accent :hover, .button-accent a :hover { background-color: #ffce3b; color: #ffffff; }
+.button-accent:hover, .button-accent a:hover { background-color: #ffce3b; color: #ffffff; }
+
+/* Styles for forms  */
+html input[disabled] { cursor: default; }
+
+input[type=reset], input[type=submit] { cursor: pointer; }
+
+input[type=checkbox], input[type=radio] { box-sizing: border-box; padding: 0; }
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { height: auto; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
+
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], textarea { border-radius: 0; -webkit-appearance: none; }
+
+input::-moz-focus-inner { border: 0; padding: 0; }
+
+select { text-transform: none; }
+
+input, select, textarea { font-weight: 400; font-family: "Open Sans", Helvetica, sans-serif; font-size: 1em; line-height: 1.77689em; margin-top: 1em; margin-bottom: 1em; color: #6d6d6d; }
+
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], textarea { margin-top: .31672em; margin-bottom: 1em; padding: 6px 8px; border: 1px solid #c5c5c5; width: 100%; }
+
+input[type=color]:focus, input[type=color]:hover, input[type=date]:focus, input[type=date]:hover, input[type=datetime-local]:focus, input[type=datetime-local]:hover, input[type=datetime]:focus, input[type=datetime]:hover, input[type=email]:focus, input[type=email]:hover, input[type=month]:focus, input[type=month]:hover, input[type=number]:focus, input[type=number]:hover, input[type=password]:focus, input[type=password]:hover, input[type=search]:focus, input[type=search]:hover, input[type=tel]:focus, input[type=tel]:hover, input[type=text]:focus, input[type=text]:hover, input[type=time]:focus, input[type=time]:hover, input[type=url]:focus, input[type=url]:hover, input[type=week]:focus, input[type=week]:hover, textarea:focus, textarea:hover { border-color: #c5c5c5; outline: 0; }
+
+input[type=search] { width: auto; border-right: none; }
+
+input[type=submit] { cursor: pointer; display: inline-block; margin: 1em 0; padding: 6px 1.77689em; border: 1px solid #c5c5c5; background-color: #5d8ac7; color: #ffffff; font-family: "Open Sans", Helvetica, sans-serif; font-size: 1em; font-weight: 400; line-height: 1.77689em; }
+input[type=submit] :hover { background-color: #4a7cc0; color: #ffffff; }
+
+input[type=submit]:hover { background-color: #4a7cc0; color: #ffffff; }
+
+input[type=submit]:active { position: relative; top: 1px; right: 0; bottom: 0; left: 0; }
+
+.post-password-form label { margin-top: 1.77689em; }
+
+.post-password-form input[type=password] { margin-top: 0.75019em; }
+
+.four-oh-four-header { font-size: 10em; text-align: center; }
+
+.four-oh-four-subheader { font-size: 4em; text-align: center; }
+
+.four-oh-four-text { font-size: 2em; text-align: center; }
+
+.four-oh-four-search { margin-bottom: 5em; text-align: center; }
+
+/* Section G VENDORS This layer addresses styling specific to vendor plugins, such as Gravity Forms or The Events Calendar. It has the power to override anything at all that has gone before it.  */
+/* Section H TRUMPS This layer beats – or 'trumps' – all other layers. It has the power to override anything at all that has gone before it. It is inelegant and heavy-handed, and contains utility and helper classes, hacks and overrides. The !important tags should go here.  */
+span.highlight-green { background-color: #cfdcee; }
+
+span.highlight-yellow { background-color: #d2e8b5; }

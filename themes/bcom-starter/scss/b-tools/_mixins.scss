@@ -54,3 +54,30 @@
     position: relative;
     z-index: 1;
 }
+
+@mixin alignleft() {
+    display: inline;
+    float: left
+}
+
+@mixin alignright() {
+    display: inline;
+    float: right
+}
+
+@mixin aligncenter() {
+    display: block
+}
+
+@mixin alignnone() {
+    display: block;
+}
+
+@mixin aligncenter() {
+    margin-right: auto;
+    margin-left: auto
+}
+
+@mixin center-text() {
+    text-align: center;
+}

@@ -8,9 +8,9 @@ button,
 .button-primary {
     @include button-style($color-primary);
 
-    //&:hover {
-    //    @include button-style-hover($color-primary);
-    //}
+    &:hover {
+        @include button-style-hover($color-primary);
+    }
 }
 
 button a,

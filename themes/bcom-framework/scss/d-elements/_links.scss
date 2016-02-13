@@ -6,11 +6,12 @@
 a {
     background-color: transparent;
     text-decoration: underline;
-    color: $color-accent; // color alone isn't accessibility friendly
+    color: inherit; // color alone isn't accessibility friendly
 
-    :active,
-    :hover {
-        color: $color-primary;
+    &:active,
+    &:hover {
+        color: darken($color-secondary, $darken-percentage);
         outline: 0;
+        text-decoration: none;
     }
 }

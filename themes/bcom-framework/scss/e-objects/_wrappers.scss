@@ -32,7 +32,7 @@ nav {
  * Page wrappers
  */
 
-.site-main {
+.main {
     @include outer-container();
 }
 
@@ -43,10 +43,18 @@ nav {
 
 #primary {
     @include span_columns(8);
+
+    @include media($tablet) {
+        @include span-columns(12);
+    }
 }
 
 #secondary {
     @include span-columns(4);
+
+   @include media($tablet) {
+        @include span-columns(12);
+    }
 }
 
 .container {

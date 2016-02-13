@@ -4,11 +4,9 @@
  */
 
 @mixin container() {
-    max-width: 68em;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 2em;
-    padding-left: 2em
 }
 
 @mixin button-style($color) {

@@ -36,5 +36,5 @@
 		</div>
 	</nav><!-- .primary-navigation -->
 
-	<section class="site-content">
+	<section class="site-main">
 		<div class="container">

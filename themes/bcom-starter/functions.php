@@ -13,7 +13,7 @@ if ( ! function_exists( 'bcom_google_fonts' ) ) :
  */
 function bcom_google_fonts() {
 	$query_args = array(
-		'family' => 'Lato:400,300,700,400italic',
+		'family' => 'Lato:400,300,700,400italic|Open+Sans:400,700|Oswald:700',
 
 		// Here's an example for changing fonts.
 		// 

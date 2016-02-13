@@ -82,17 +82,17 @@ li:last-of-type { margin-bottom: 1em; }
 a:hover { color: #606060; }
 
 /* Heading styles  */
-h1, h2, h3, h4, h5, h6 { font-weight: bold; color: #5d8ac7; font-family: "Lato", Helvetica, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; color: #5d8ac7; font-family: "Lato", Helvetica, sans-serif; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
 h1 a :hover, h2 a :hover, h3 a :hover, h4 a :hover, h5 a :hover, h6 a :hover { color: #8bc53f; }
 
-h1 { font-size: 30.6px; }
+h1 { font-size: 36px; text-transform: uppercase; }
 
-h2 { font-size: 27px; font-weight: bolder; text-transform: uppercase; }
+h2 { font-size: 31.5px; }
 
-h3 { font-size: 21.6px; font-weight: bolder; }
+h3 { font-size: 27px; font-style: italic; }
 
-h4 { font-size: 21.6px; text-transform: uppercase; }
+h4 { font-size: 22.5px; text-transform: uppercase; }
 
 h5 { font-style: italic; }
 

@@ -37,9 +37,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Any mixin or function that does not need accessing globally should belong in the partial to which it relates.
  *
  */
-
 @import "b-tools/mixins";
-
 
 /*
  * Section C
@@ -49,19 +47,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * This layer is seldom modified, and is usually the same across any projects you work on.
  * It contains things like Normalize.css, global box-sizing rules, CSS resets and so on.
  *
- *
- * NOTE: You probably only need one of the following...
- *
  * Reset.css unstyles every element.
  * Normalize.css styles browsers to render elements more consistently with each other.
  * Sanitize.css styles browsers to render elements more consistently with developer expectations and preferences.
  *
+ * NOTE: You probably only need one of the following...
+ *
  */
-
 @import "c-generic/reset";
 //@import "c-generic/normalize";
 //@import "c-generic/sanitize";
-//@import "c-generic/align";
 
 /*
  * Section D
@@ -82,7 +77,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Objects can range from something as simple as a .wrapper element, to layout systems, to media objects.
  *
  */
-
 @import "e-objects/bourbon/bourbon";
 @import "e-objects/neat/grid-settings";
 @import "e-objects/neat/neat";
@@ -139,5 +133,4 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * The !important tags should go here.
  *
  */
-@import "h-trumps/utilities";
 @import "h-trumps/shame";

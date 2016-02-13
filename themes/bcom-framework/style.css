@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-Theme Name: BCom Framew
+Theme Name: BCom Framework
 Theme URI: http://design.org/wordpress-starter-theme/
 Author: BCom Solutions, LLC
 Author URI: http://bcomonline.com
@@ -59,12 +59,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * This layer is seldom modified, and is usually the same across any projects you work on.
  * It contains things like Normalize.css, global box-sizing rules, CSS resets and so on.
  *
- *
- * NOTE: You probably only need one of the following...
- *
  * Reset.css unstyles every element.
  * Normalize.css styles browsers to render elements more consistently with each other.
  * Sanitize.css styles browsers to render elements more consistently with developer expectations and preferences.
+ *
+ * NOTE: You probably only need one of the following...
  *
  */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -709,6 +708,11 @@ button,
   button :hover,
   .button :hover,
   .button-primary :hover {
+    background-color: #4a7cc0;
+    color: #ffffff; }
+  button:hover,
+  .button:hover,
+  .button-primary:hover {
     background-color: #4a7cc0;
     color: #ffffff; }
 

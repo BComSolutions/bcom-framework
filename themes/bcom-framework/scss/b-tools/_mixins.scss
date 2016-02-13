@@ -23,6 +23,11 @@
     font-size: 1em;
     font-weight: 400;
     line-height: 1.77689em;
+
+    :hover {
+        background-color: darken($color, $darken-percentage);
+        color: $white;
+    }
 }
 
 @mixin button-style-hover($color) {

@@ -4,12 +4,13 @@
  */
 
 button,
-.button {
+.button,
+.button-primary {
     @include button-style($color-primary);
 
-    &:hover {
-        @include button-style-hover($color-primary);
-    }
+    //&:hover {
+    //    @include button-style-hover($color-primary);
+    //}
 }
 
 button a,
@@ -18,8 +19,8 @@ button a,
     text-decoration: none;
 }
 
-.button--state-submit,
-.button--state-submit a {
+.button-secondary,
+.button-secondary a {
     @include button-style($color-secondary);
 
     &:hover {
@@ -27,8 +28,8 @@ button a,
     }
 }
 
-.button--state-danger,
-.button--state-danger a {
+.button-accent,
+.button-accent a {
     @include button-style($color-accent);
 
     &:hover {

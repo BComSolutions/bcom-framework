@@ -6,9 +6,7 @@ header:after,
 section:after,
 footer:before,
 .site-content:after {
-    content: "";
-    display: table;
-    clear: both;
+   @include clearfix;
 }
 
 /**

@@ -4,8 +4,9 @@ sub,
 sup {
     position: relative
 }
+
 .gallery::after,
-// .main-navigation .menu::after,
+    // .main-navigation .menu::after,
 .nav-links::after,
 blockquote:after,
 blockquote:before,
@@ -13,9 +14,10 @@ q:after,
 q:before {
     content: ""
 }
+
 .comment-list li.comment,
 .gform_fields li,
-// .main-navigation .menu li,
+    // .main-navigation .menu li,
 #menu-utility-menu li,
 .no-bullets li,
 .social-sharing li,
@@ -24,25 +26,29 @@ q:before {
     list-style-image: none
 }
 
-
 abbr[title] {
     border-bottom: 1px dotted
 }
+
 mark {
     background: #ff0;
     color: #000
 }
+
 sup {
     top: -.5em;
     bottom: 1ex
 }
+
 sub {
     bottom: -.25em;
     top: .5ex
 }
+
 svg:not(:root) {
     overflow: hidden
 }
+
 button,
 input,
 optgroup,
@@ -61,24 +67,27 @@ article.post h4 {
 }
 
 body {
-     font-weight: 400;
-     font-family: $font-body;
-     font-size: 1em;
-     line-height: 1.77689em;
-     margin-top: 1em;
-     margin-bottom: 1em;
-     color: $color-text;
- }
->blockquote p:last-child,
+    font-weight: 400;
+    font-family: $font-body;
+    font-size: 1em;
+    line-height: 1.77689em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: $color-text;
+}
+
+> blockquote p:last-child,
 body,
-li>ol,
-li>ul {
+li > ol,
+li > ul {
     margin-bottom: 0
 }
+
 body {
     margin-top: 0;
     background-color: #fff;
 }
+
 h1,
 h2,
 h3,
@@ -88,10 +97,12 @@ h6 {
     font-weight: 400;
     clear: both
 }
+
 a:hover {
     // text-decoration: underline;
     color: #276aa2
 }
+
 #mobile-menu-switch .toggle:hover,
 .comment-body h1 a:hover,
 .entry-title a:hover,
@@ -103,29 +114,35 @@ ins,
 mark {
     text-decoration: none
 }
+
 a:active {
     top: 1px
 }
+
 b,
 dt,
 strong {
     font-weight: 400
 }
+
 cite,
 dfn,
 em,
 i {
     font-style: italic
 }
+
 blockquote {
     line-height: 1.77689em;
     padding-left: 1.333em;
     border-left: 1px solid #dbdbdb
 }
+
 hr,
 pre {
     margin-bottom: 1.6em
 }
+
 code,
 kbd,
 pre,
@@ -141,64 +158,78 @@ var {
     hyphens: none;
     -ms-hyphens: none
 }
+
 code {
     margin-right: .31672em;
     margin-left: .31672em;
     padding: .2376em .42219em;
     background-color: #fdfdfd
 }
+
 body code,
 body pre {
     border: 1px solid #dbdbdb
 }
+
 hr,
 img {
     border: 0
 }
+
 pre {
     padding: 1.77689em;
     background-color: #fdfdfd
 }
+
 abbr,
 acronym {
     cursor: help;
     border-bottom: 1px dotted #eaeaea;
     border-bottom: 1px dotted rgba(51, 51, 51, .1)
 }
+
 ins,
 mark {
     padding-right: .2376em;
     padding-left: .2376em;
     background-color: #fff9c0
 }
+
 .no-bullets,
 .no-bullets li {
     padding-left: 0
 }
+
 sub,
 sup {
     line-height: 0;
     height: 0;
     vertical-align: baseline
 }
+
 big {
     font-size: 125%
 }
+
 hr {
     height: 1px;
     background-color: #eaeaea;
     background-color: rgba(51, 51, 51, .1)
 }
+
 ol,
 ul {
     margin: 0 0 1em 1.333em
 }
+
 ul {
     list-style: disc
 }
+
 ol {
     list-style: decimal
 }
+
 .comment-list,
 .gform_fields,
 .no-bullets,
@@ -206,9 +237,11 @@ ol {
 .widget ul {
     list-style: none
 }
+
 .no-bullets li {
     margin-left: 0
 }
+
 img {
     height: auto;
     -ms-interpolation-mode: bicubic
@@ -217,6 +250,7 @@ img {
 .widget {
     border-bottom: 1px solid #dbdbdb
 }
+
 .comment-content img[height],
 .entry-content img,
 .entry-summary img,
@@ -226,6 +260,7 @@ img[class*=wp-image-] {
     height: auto;
     vertical-align: bottom
 }
+
 figure.wp-caption,
 img.size-full,
 img.size-large,
@@ -233,9 +268,11 @@ img.wp-post-image {
     max-width: 100%;
     height: auto
 }
+
 .entry-content .twitter-tweet-rendered {
-    max-width: 100%!important
+    max-width: 100% !important
 }
+
 .wp-caption-text {
     font-size: 14px;
     font-size: .875rem;
@@ -250,11 +287,13 @@ blockquote.alignleft,
 img.alignleft {
     margin: .56278em 1.333em .56278em 0
 }
+
 .wp-caption.alignright,
 blockquote.alignright,
 img.alignright {
     margin: .56278em 0 .56278em 1.333em
 }
+
 .wp-caption.aligncenter,
 .wp-caption.alignnone,
 blockquote.aligncenter,
@@ -265,12 +304,14 @@ img.alignnone {
     margin-top: 1.333em;
     margin-bottom: 1em
 }
+
 .wp-caption.aligncenter,
 .wp-caption.alignleft,
 .wp-caption.alignnone,
 .wp-caption.alignright {
     margin-bottom: .42219em
 }
+
 .attachment-post-thumbnail {
     display: block;
     margin-bottom: 2.36859em
@@ -286,6 +327,7 @@ img.alignnone {
     padding-right: 2.0225em;
     padding-left: 2.0225em
 }
+
 .container::after,
 .content-container::after,
 .footer-container::after,
@@ -298,13 +340,16 @@ img.alignnone {
 .site-logo {
     margin-bottom: 0
 }
+
 .site-logo,
 .site-title:first-child {
     margin-top: 0
 }
+
 .site-logo {
     display: inline-block
 }
+
 .site-description {
     display: none
 }
@@ -315,35 +360,43 @@ img.alignnone {
 .comments-title small a {
     color: #999
 }
+
 #mobile-menu-switch .toggle:active {
     top: 0
 }
+
 #mobile-menu-switch .toggle.on {
     border-left: 1px solid #dbdbdb;
     background-color: #f9f9f9
 }
+
 .post-navigation {
     margin-top: 3.75rem;
     margin-bottom: 3.75rem
 }
+
 .comment-navigation {
     margin-top: -1.875rem;
     margin-bottom: 3.75rem
 }
+
 .content-area,
 .widget-area {
     float: left;
     display: block;
     margin-top: 3.75rem
 }
+
 .content-area {
     margin-right: 2.35765%;
     width: 65.88078%;
     margin-bottom: 3.75rem
 }
+
 .content-area:last-child {
     margin-right: 0
 }
+
 .page-template-page-full-width .content-area {
     float: left;
     display: block;
@@ -351,24 +404,30 @@ img.alignnone {
     width: 100%;
     padding-right: 0
 }
+
 .page-template-page-full-width .content-area:last-child {
     margin-right: 0
 }
+
 .page .content-area,
 .single .content-area {
     margin-bottom: 0
 }
+
 .widget-area {
     margin-right: 2.35765%;
     width: 31.76157%;
     margin-bottom: 3.75rem
 }
+
 .widget-area:last-child {
     margin-right: 0
 }
+
 .screen-reader-text {
     display: none
 }
+
 .widget-title {
     font-weight: 400;
     font-size: 1em;
@@ -376,30 +435,37 @@ img.alignnone {
     margin-top: 1em;
     margin-bottom: 1em
 }
+
 .widget {
     margin-bottom: 1em;
     padding-top: 1em;
     padding-bottom: 1em
 }
+
 .widget:last-child,
 .widget_search {
     padding-bottom: 0;
     border-bottom: none
 }
+
 .widget_search,
 .widget_search .search-submit {
     margin-bottom: 0
 }
+
 .widget:first-child {
     padding-top: 0
 }
+
 .widget ul,
 .widget ul li {
     padding-left: 0
 }
+
 .widget_search .search-form {
     margin-bottom: 1em
 }
+
 .comment-body,
 article.page,
 article.post {
@@ -407,6 +473,7 @@ article.post {
     padding-bottom: 3.75rem;
     border-bottom: 1px solid #dbdbdb
 }
+
 .comment-body h1,
 article.page h1,
 article.post h1 {
@@ -416,11 +483,13 @@ article.post h1 {
     margin-top: .56278em;
     margin-bottom: .56278em
 }
+
 .comment-body h1:first-child,
 article.page h1:first-child,
 article.post h1:first-child {
     margin-top: 0
 }
+
 .comment-body h2,
 article.page h2,
 article.post h2 {
@@ -430,6 +499,7 @@ article.post h2 {
     margin-top: 1em;
     margin-bottom: .75019em
 }
+
 .comment-body h3,
 article.page h3,
 article.post h3 {
@@ -439,6 +509,7 @@ article.post h3 {
     margin-top: 1em;
     margin-bottom: 1em
 }
+
 .comment-body h4,
 .comment-body h5,
 .comment-body h6,
@@ -454,16 +525,19 @@ article.post h6 {
     margin-top: 1em;
     margin-bottom: 1em
 }
+
 .comment-body table,
 article.page table,
 article.post table {
     width: 100%
 }
+
 .comment-body th,
 article.page th,
 article.post th {
     font-weight: 400
 }
+
 .comment-body td,
 .comment-body th,
 article.page td,
@@ -475,10 +549,12 @@ article.post th {
     text-align: left;
     border-bottom: 1px solid #dbdbdb
 }
+
 .page article.page {
     padding-bottom: 0;
     border: none
 }
+
 .entry-title {
     font-weight: 300;
     font-size: 3.15733em;
@@ -486,27 +562,33 @@ article.post th {
     margin-top: .56278em;
     margin-bottom: .42219em
 }
+
 .entry-footer,
 .entry-meta {
     font-size: 14px;
     font-size: .875rem;
     line-height: 1.333em
 }
+
 .entry-title:first-child {
     margin-top: 0
 }
+
 .entry-content,
 .entry-summary,
 .page-content {
     margin-top: 1em;
     margin-bottom: 1.77689em
 }
-.entry-footer>span {
+
+.entry-footer > span {
     margin-right: 1em
 }
-.entry-footer>span:last-child {
+
+.entry-footer > span:last-child {
     margin-right: 0
 }
+
 .page-title {
     font-weight: 400;
     font-size: 1em;
@@ -515,6 +597,7 @@ article.post th {
     margin-bottom: 1.333em;
     color: #999
 }
+
 .comment-body .reply,
 .form-allowed-tags,
 .social-sharing li {
@@ -528,52 +611,61 @@ article.post th {
     margin-left: 2px
 }
 
-
 .comment-body::after,
 .search-form::after,
 .social-sharing::after {
     clear: both;
     content: ""
 }
+
 .bypostauthor,
 .gallery-caption {
     display: block
 }
+
 .social-sharing {
     display: block;
     margin-left: 0;
     padding-left: 0;
     margin-bottom: 1.875rem
 }
+
 .social-sharing::after {
     display: table
 }
+
 .comment-body,
 article.sticky {
     display: block
 }
+
 .social-sharing li {
     padding-left: 0;
     margin-left: 0;
     float: left;
     margin-right: 1em
 }
+
 .error404 .content-area:last-child,
 .social-sharing li:last-child {
     margin-right: 0
 }
+
 .comment-body {
     margin-bottom: 1.875rem;
     padding-bottom: 1.875rem;
     padding-left: 65px
 }
+
 .comment-body .comment-content p,
 .comment-body .comment-meta {
     margin-bottom: .31672em
 }
+
 .comment-body::after {
     display: table
 }
+
 .comment-body .comment-meta .comment-author {
     position: relative;
     top: 0;
@@ -582,6 +674,7 @@ article.sticky {
     left: 0;
     display: inline
 }
+
 .comment-body .comment-meta .comment-metadata {
     font-size: 14px;
     font-size: .875rem;
@@ -589,11 +682,13 @@ article.sticky {
     display: inline;
     margin-left: .56278em
 }
+
 .comment-list,
 .comment-list li.comment {
     padding-left: 0;
     margin-left: 0
 }
+
 .comment-body .comment-meta .avatar {
     position: absolute;
     top: 0;
@@ -602,22 +697,28 @@ article.sticky {
     left: -65px;
     border-radius: 50%
 }
+
 .comment-body .comment-meta .says {
     display: none
 }
+
 .comment-body .reply {
     padding-top: .31672em
 }
+
 .comment-form-comment {
     margin-bottom: 0
 }
+
 .comment-list {
     margin-bottom: 1.875rem;
     padding-bottom: .9375rem
 }
+
 .form-allowed-tags {
     margin-bottom: 1em
 }
+
 .comment-reply-title,
 .comments-title {
     font-weight: 300;
@@ -626,16 +727,19 @@ article.sticky {
     margin-top: 1em;
     margin-bottom: .75019em
 }
+
 .comment-notes,
 .comment-respond {
     margin-bottom: 1.875rem
 }
+
 .comment-notes,
 .site-footer .site-info {
     font-size: 14px;
     font-size: .875rem;
     line-height: 1.333em
 }
+
 .comment-reply-title small,
 .comments-title small {
     font-size: 14px;
@@ -646,42 +750,52 @@ article.sticky {
     margin-top: 10px;
     text-transform: capitalize
 }
+
 .content-area .search-form,
-.pingback+.comment .comment-body {
+.pingback + .comment .comment-body {
     margin-top: 1.875rem
 }
+
 .comment-respond {
     padding-bottom: 1.875rem
 }
+
 .comment-respond .submit {
     margin-bottom: 0
 }
+
 .pingback .comment-body {
     margin-bottom: .9375rem;
     padding-bottom: .9375rem;
     padding-left: 0
 }
+
 .site-footer {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     border-top: 1px solid #dbdbdb
 }
+
 .search-form {
     display: block;
     margin-bottom: 1.875rem
 }
+
 .search-form::after {
     display: table
 }
+
 .content-area .search-form label {
     margin-top: 0;
     margin-bottom: 0
 }
+
 .search-form input[type=search] {
     width: 100%;
     margin-top: 0;
     margin-bottom: 0
 }
+
 .search-form .search-submit {
     float: left;
     display: block;
@@ -690,26 +804,32 @@ article.sticky {
     padding-right: 0;
     padding-left: 0
 }
+
 .search-form .search-submit:last-child {
     width: 32.86064%
 }
+
 .search-form label {
     float: left;
     display: block;
     width: 67.13936%
 }
+
 .search-form label:last-child {
     width: 59.71639%
 }
+
 .search-form label input[type=search] {
     box-sizing: border-box;
     width: 100%
 }
+
 .search-results article:last-child {
     border: none;
     padding-bottom: 0;
     margin-bottom: 1.875rem
 }
+
 .content-area label {
     font-weight: 400;
     font-size: 1em;
@@ -719,7 +839,6 @@ article.sticky {
     margin-bottom: .5em
 }
 
-
 .error404 .content-area {
     float: left;
     display: block;
@@ -727,6 +846,7 @@ article.sticky {
     margin-right: 0;
     padding-right: 0
 }
+
 .error404 .page-title {
     font-weight: 300;
     //font-size: 3.15733em;
@@ -734,6 +854,7 @@ article.sticky {
     margin-top: .56278em;
     margin-bottom: .56278em
 }
+
 .error404 .page-title:first-child {
     margin-top: 0
 }

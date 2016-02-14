@@ -15,7 +15,7 @@ get_header(); ?>
 
 <section class="main" role="main">
 
-	<div id="primary" class="container">
+	<div class="primary">
 
 		<?php if ( have_posts() ) : ?>
 

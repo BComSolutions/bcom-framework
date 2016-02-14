@@ -36,12 +36,12 @@ nav {
     @include outer-container();
 }
 
-#primary,
-#secondary {
+.primary,
+.secondary {
     margin-top: 1em;
 }
 
-#primary {
+.primary {
     @include span_columns(8);
 
     @include media($tablet) {
@@ -53,7 +53,7 @@ nav {
     }
 }
 
-#secondary {
+.secondary {
     @include span-columns(4);
 
     @include media($tablet) {

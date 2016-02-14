@@ -13,7 +13,7 @@
 get_header(); ?>
 
 <main class="main" role="main">
-	<div id="primary" class="container">
+	<div class="primary">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

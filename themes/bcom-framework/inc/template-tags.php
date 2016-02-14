@@ -15,7 +15,7 @@ function bcom_featured_image() {
 	if ( has_post_thumbnail() ) {
 	?>
 	<div class="entry-featured-image">
-		<?php the_post_thumbnail( 'large' ); ?>
+		<?php the_post_thumbnail( 'blogpost' ); ?>
 	</div> <!-- .featured-image -->
 	<?php
 	}

@@ -6,7 +6,7 @@ header:after,
 section:after,
 footer:before,
 .site-content:after {
-   @include clearfix;
+    @include clearfix;
 }
 
 /**
@@ -45,15 +45,23 @@ nav {
     @include span_columns(8);
 
     @include media($tablet) {
-        @include span-columns(12);
+        @include span-columns(8);
+    }
+
+    @include media($mobile) {
+        @include span-columns(4);
     }
 }
 
 #secondary {
     @include span-columns(4);
 
-   @include media($tablet) {
-        @include span-columns(12);
+    @include media($tablet) {
+        @include span-columns(8);
+    }
+
+    @include media($mobile) {
+        @include span-columns(4);
     }
 }
 

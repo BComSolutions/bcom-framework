@@ -2,73 +2,46 @@
     border-bottom: none;
 }
 
-.info-widgets .widget:last-child {
-    margin-top: 0;
-}
-
-// RSS feeds section customization
-.rss-feeds {
-
-    & h1 {
-        font-size: 2em;
-    }
-
-    img {
-        display: none;
-    }
-}
-
-.rss-feeds .widget-title {
-    margin: 0 0 0.5em 0;
-}
-
-.rss-feeds ul li {
-    margin-bottom: 1em;
-}
-
-// Message board / weather customization
-.left.col {
-    padding-right: 2em;
-}
-
-// Market Data widget customization
-.market-data {
-    margin-top: 1.3em;
-}
-
 // Footer widgets
 .footer-block aside {
     padding-left: 0.7em;
 }
-.footer-widget-title {
+
+.fat-footer {
+    @include clearfix;
+
+    background-color: $color-secondary;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+.fat-footer-widget-title {
     text-transform: uppercase;
 }
 
 .fat-footer-one,
 .fat-footer-two,
-.fat-footer-three,
-.fat-footer-four {
+.fat-footer-three {
     margin-bottom: 0;
     margin-top: 0;
     padding-top: 0;
+}
+
+.fat-footer-one {
+    @include span-columns(4);
+
+    text-align: left;
+}
+
+.fat-footer-two {
+    @include span-columns(4);
+
     text-align: center;
 }
 
-.fat-footer .widget_sp_image {
-    float: left;
-    padding-bottom: 0;
-}
+.fat-footer-three {
+    @include span-columns(4);
+    @include omega();
 
-.fat-footer .fa-stack {
-    float: left;
-    margin-right: 0.5em;
-}
-
-.fat-footer .textwidget a {
-    color: $white;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
+    text-align: right;
 }

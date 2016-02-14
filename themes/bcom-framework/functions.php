@@ -121,6 +121,33 @@ function bcom_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Fat Footer One', 'bcom' ),
+		'id'            => 'fat-footer-one',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s fat-footer-one">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="fat-footer-widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Fat Footer Two', 'bcom' ),
+		'id'            => 'fat-footer-two',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s fat-footer-two">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="fat-footer-widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Fat Footer Three', 'bcom' ),
+		'id'            => 'fat-footer-three',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s fat-footer-three">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="fat-footer-widget-title">',
+		'after_title'   => '</h3>',
+	) );
 }
 endif; // bcom_widgets_init
 add_action( 'widgets_init', 'bcom_widgets_init' );

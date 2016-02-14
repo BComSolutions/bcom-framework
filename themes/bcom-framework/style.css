@@ -306,6 +306,3 @@ input[type=submit]:active { position: relative; top: 1px; right: 0; bottom: 0; l
 
 /* Section G VENDORS This layer addresses styling specific to vendor plugins, such as Gravity Forms or The Events Calendar. It has the power to override anything at all that has gone before it.  */
 /* Section H TRUMPS This layer beats – or 'trumps' – all other layers. It has the power to override anything at all that has gone before it. It is inelegant and heavy-handed, and contains utility and helper classes, hacks and overrides. The !important tags should go here.  */
-span.highlight-green { background-color: #cfdcee; }
-
-span.highlight-yellow { background-color: #d2e8b5; }

@@ -8,26 +8,23 @@
  */
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'bcom' ); ?></h1>
-	</header><!-- .page-header -->
+<section class="not-found">
 
-	<div class="page-content">
-		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+	<h2 class="four-oh-four-header">Oops!</h2>
+	<p class="four-oh-four-subheader"><?php _e( "Something went wrong.", 'bcom' ); ?></p>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'bcom' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+	<p class="four-oh-four-text"><?php _e( "You can head back to the Home Page.", 'bcom' ); ?></p>
+	<div class="center-text">
+		<a href="<?php bloginfo( 'url' ); ?>">
+			<div class="button-primary"><?php _e( "Back to Home Page", 'bcom' ); ?></div>
+		</a>
+	</div>
 
-		<?php elseif ( is_search() ) : ?>
+	<br/>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'bcom' ); ?></p>
-			<?php get_search_form(); ?>
+	<p class="four-oh-four-text"><?php _e( "Or maybe try another search?", 'bcom' ); ?></p>
+	<div class="four-oh-four-search">
+		<?php get_search_form(); ?>
+	</div>
 
-		<?php else : ?>
-
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'bcom' ); ?></p>
-			<?php get_search_form(); ?>
-
-		<?php endif; ?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+</section><!-- .not-found -->

@@ -14,9 +14,14 @@ footer:before,
  */
 
 header {
+    border-bottom: 3px solid $color-primary;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     z-index: 9999;
+}
+
+.entry-header {
+    border-bottom: none;
 }
 
 nav {

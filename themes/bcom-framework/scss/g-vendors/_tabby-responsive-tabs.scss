@@ -21,7 +21,6 @@
     border-radius: 0 !important;
 }
 
-
 /**
  * Media Queries from default CSS
  */
@@ -64,14 +63,14 @@
 
     .responsive-tabs .responsive-tabs__heading .fa {
         margin-right: 8px;
-        display:none;
+        display: none;
     }
 
     .responsive-tabs .responsive-tabs__heading:after {
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         border-top: 6px solid #777;
-        content:"";
+        content: "";
         display: block;
         position: absolute;
         right: 20px;

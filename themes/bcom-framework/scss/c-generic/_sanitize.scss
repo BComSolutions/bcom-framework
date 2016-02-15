@@ -31,8 +31,6 @@ $table-border-collapse: collapse !default;
 $table-border-spacing: 0 !default;
 $textarea-resize: vertical !default;
 
-
-
 /*
  * Normalization
  */
@@ -133,8 +131,6 @@ textarea {
     text-decoration: inherit;
     vertical-align: inherit;
 }
-
-
 
 /*
  * Opinionated defaults
@@ -249,15 +245,15 @@ nav ul {
 // specify the standard appearance of selects
 
 select {
-    -moz-appearance: none;    // Firefox 40+
+    -moz-appearance: none; // Firefox 40+
     -webkit-appearance: none; // Chrome 45+
 
     &::-ms-expand {
-        display: none;        // Edge 12+, Internet Explorer 11-
+        display: none; // Edge 12+, Internet Explorer 11-
     }
 
     &::-ms-value {
-        color: currentColor;  // Edge 12+, Internet Explorer 11-
+        color: currentColor; // Edge 12+, Internet Explorer 11-
     }
 }
 

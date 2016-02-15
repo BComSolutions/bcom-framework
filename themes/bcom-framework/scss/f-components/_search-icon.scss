@@ -38,7 +38,7 @@
     display: inline-block;
     float: right;
     -webkit-transition: width 400ms ease, background 400ms ease;
-    transition:         width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
     width: 0;
     z-index: 9999;
 }
@@ -61,7 +61,6 @@
 li.menu-item.my-nav-menu-search {
     margin-left: 0 !important;
 }
-
 
 // search form button (on search page when there's no results)
 .search-form label input[type=search] {

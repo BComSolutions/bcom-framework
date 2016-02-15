@@ -7,12 +7,10 @@
 // Normalize.scss settings
 // =============================================================================
 
-
 // Set to true if you want to add support for IE6 and IE7
 // Notice: setting to true might render some elements
 // slightly differently than when set to false
 $legacy_support_for_ie: false !default; // Used also in Compass
-
 
 // Set the default font family here so you don't have to override it later
 $normalized_font_family: sans-serif !default;
@@ -452,7 +450,7 @@ input[type="submit"] {
     -webkit-appearance: button; // 2
     cursor: pointer; // 3
     @if $legacy_support_for_ie {
-        *overflow: visible;  // 4
+        *overflow: visible; // 4
     }
 }
 

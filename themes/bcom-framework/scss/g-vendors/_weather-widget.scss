@@ -13,14 +13,12 @@
     }
 }
 
-
 @media screen and (max-width: $breakpoint-medium) {
     .weather iframe {
         max-width: $breakpoint-medium;
         overflow: hidden;
     }
 }
-
 
 @media screen and (max-width: $breakpoint-small) {
     .weather iframe {

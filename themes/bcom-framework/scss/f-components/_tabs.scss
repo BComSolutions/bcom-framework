@@ -30,7 +30,7 @@ ul.tabs li,
     font-size: 0.9em;
 
     //width: 100 / 7 * 100%; // where 8 is the number of tabs
-    width: 11.5%;  // because it didn't work like I wanted it to
+    width: 11.5%; // because it didn't work like I wanted it to
 
     &:first-of-type {
         padding-left: 0;
@@ -56,7 +56,7 @@ ul.tabs li,
     padding: 1em 0;
 }
 
-.tab-content.current{
+.tab-content.current {
     display: inherit;
 }
 
@@ -71,6 +71,7 @@ ul.tabs li,
     margin-left: 0;
     margin-top: -70px;
 }
+
 .col.col-right {
     margin-right: 0;
     margin-top: -70px;

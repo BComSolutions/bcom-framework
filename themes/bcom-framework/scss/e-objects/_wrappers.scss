@@ -14,14 +14,19 @@ footer:before,
  */
 
 header {
-    border-bottom: 3px solid $color-primary;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     z-index: 9999;
+
+    @media screen and (max-width: 1000px) {
+        border-bottom: 3px solid $color-primary;
+    }
 }
 
 .entry-header {
-    border-bottom: none;
+    @media screen and (max-width: 1000px) {
+        border-bottom: none;
+    }
 }
 
 nav {

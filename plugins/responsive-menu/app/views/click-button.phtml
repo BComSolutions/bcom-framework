@@ -1,0 +1,54 @@
+<!-- Added by Responsive Menu Plugin for WordPress - http://responsive.menu -->
+
+<div id="click-menu" 
+     class="<?php echo is_admin_bar_showing() ? 'admin-bar-showing ' : ''; ?> 
+     <?php echo $data['RMAnim']; ?>"
+     role="button" 
+     aria-label="Responsive Menu Button"
+     >
+
+<?php if( $data['RMX'] || $data['RMClickImgClicked'] ) : ?>
+
+    <?php if( $data['RMClickImgClicked'] ) : ?>
+    
+        <img 
+            id="RMX" 
+            src="<?php echo $data['RMClickImgClicked']; ?>" 
+            class="click-menu-image"
+            alt="Responsive Menu Image"
+            title="Responsive Menu Image" />
+    
+    <?php else : ?>
+    
+        <div class="threeLines" id="RMX">×</div>
+    
+    <?php endif; ?>
+
+<?php endif; ?>
+
+<?php if( !$data['RMClickImg'] ) : ?>
+
+    <div class="threeLines" id="RM3Lines">       
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+<?php else : ?>
+
+    <img 
+        id="RM3Lines" 
+        src="<?php echo $data['RMClickImg']; ?>" 
+        class="click-menu-image"
+        alt="Responsive Menu Clicked Image"
+        title="Responsive Menu Clicked Image" />
+
+<?php endif; ?>
+
+<?php if( $data['RMClickTitle'] ) : ?>
+
+    <div id="click-menu-label"><?php echo $data['RMClickTitle']; ?></div>
+
+<?php endif; ?>
+
+</div>

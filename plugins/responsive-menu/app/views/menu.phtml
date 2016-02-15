@@ -1,0 +1,75 @@
+<!-- Added by Responsive Menu Plugin for WordPress - http://responsive.menu -->
+
+<div id="responsive-menu" <?php echo is_admin_bar_showing() ? 'class="admin-bar-showing"' : ''; ?>>
+
+    <?php if( $data['RMTitle'] || $data['RMImage'] ) : ?>
+
+        <div id="responsive-menu-title">
+
+            <?php if( $data['RMImage'] ) : ?>
+
+                <?php if( isset( $data['RMTitleLink'] ) && !empty( $data['RMTitleLink'] ) ) : ?>
+            
+                    <a href="<?php echo $data['RMTitleLink']; ?>" target="<?php echo $data['RMTitleLoc']; ?>">
+                        
+                <?php endif; ?>
+                    
+                <img src="<?php echo $data['RMImage']; ?>" 
+                     class="RMImage" 
+                     alt="<?php echo $data['RMTitle']; ?>" 
+                     title="<?php echo $data['RMTitle']; ?>" />
+                
+            <?php if( isset( $data['RMTitleLink'] ) && !empty( $data['RMTitleLink'] ) ) : ?>
+                
+                    </a>
+            
+            <?php endif; ?>
+
+            <?php endif; ?>
+
+            <?php if( isset( $data['RMTitleLink'] ) && !empty( $data['RMTitleLink'] ) ) : ?>
+            
+                <a href="<?php echo $data['RMTitleLink']; ?>" target="<?php echo $data['RMTitleLoc']; ?>">
+                    
+            <?php endif; ?>
+                    
+            <?php echo $data['RMTitle']; ?>
+                
+            <?php if( isset( $data['RMTitleLink'] ) && !empty( $data['RMTitleLink'] ) ) : ?>
+                    
+                </a>
+            
+            <?php endif; ?>
+            
+        </div>
+    
+    <?php endif;
+
+        if( isset( $data['RMHtml'] ) && !empty( $data['RMHtml'] ) && $data['RMHtmlLoc'] == 'above' ) :
+            self::additionalContent( $data['RMHtml'] );
+        endif;
+            
+        if( !$data['RMSearch'] && $data['RMSearchPos'] == 'above' ) :
+            self::searchBar();                
+        endif;
+        
+        /* 
+         * Cache Menu to save Memory/Time 
+         * Added 19/01/15 v2.3
+         */
+        
+       echo RM_Transient::getTransientMenu( $data );
+        
+        /* End Caching */
+        
+        if( !$data['RMSearch'] && $data['RMSearchPos'] == 'below' ) :
+            self::searchBar();
+        endif;
+        
+        if( isset( $data['RMHtml'] ) && !empty( $data['RMHtml'] ) && $data['RMHtmlLoc'] == 'below' ) :
+            self::additionalContent( $data['RMHtml'] );
+        endif;
+
+    ?>
+    
+</div>

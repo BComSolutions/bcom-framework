@@ -1,0 +1,14 @@
+<wpml-config>
+    <admin-texts>
+        <key name="RMOptions">
+            <key name="RM" />
+            <key name="RMClickTitle" />
+            <key name="RMTitle" />
+            <key name="RMTitleLink" />
+            <key name="RMImage" />
+            <key name="RMClickImage" />
+            <key name="RMHtml" />
+            <key name="RMClickImgClicked" />
+        </key>
+    </admin-texts>
+</wpml-config>

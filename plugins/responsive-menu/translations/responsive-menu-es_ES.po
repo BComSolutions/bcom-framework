@@ -1,0 +1,1153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Responsive Menu\n"
+"POT-Creation-Date: 2015-08-19 21:38+0100\n"
+"PO-Revision-Date: 2015-08-19 21:38+0100\n"
+"Last-Translator: Peter Featherstone <hello@peterfeatherstone.com>\n"
+"Language-Team: Peter Featherstone <hello@peterfeatherstone.com>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_\n"
+"X-Poedit-SearchPath-0: app\n"
+
+#: app/config.php:84 app/views/admin/page.phtml:658
+msgid "Menu Title"
+msgstr "Título del Menú"
+
+#: app/controllers/AdminController.php:56
+#: app/controllers/AdminController.php:57
+msgid "Responsive Menu"
+msgstr "Menú Flexible"
+
+#: app/controllers/AdminController.php:155
+msgid "Settings"
+msgstr "Ajustes"
+
+#: app/controllers/GlobalController.php:57
+msgid "Highly Customisable Responsive Menu Plugin for WordPress"
+msgstr ""
+
+#: app/library/responsive-menu/Export.php:23
+#, fuzzy
+msgid "Could not create export file, please check plugin folder permissions"
+msgstr ""
+"Hubo un problema al escribir los archivos CSS y JS, compruebe los js del "
+"plugin y los permisos de carpeta/archivo del css"
+
+#: app/library/responsive-menu/Export.php:43
+msgid "You can download your exported file by clicking here"
+msgstr ""
+
+#: app/library/responsive-menu/Import.php:17
+#, fuzzy
+msgid "No Import File Attached"
+msgstr "No es posible crear el archivo de CSS"
+
+#: app/library/responsive-menu/Import.php:20
+msgid "Incorrect Import File Format"
+msgstr ""
+
+#: app/library/responsive-menu/Import.php:23
+msgid "Import File Too Large"
+msgstr ""
+
+#: app/library/responsive-menu/Import.php:26
+#, fuzzy
+msgid "Import File Not Valid"
+msgstr "No es posible crear el archivo de CSS"
+
+#: app/library/responsive-menu/View.php:68
+#, fuzzy
+msgid "Search"
+msgstr "Remover el Campo de Búsqueda"
+
+#: app/models/AdminModel.php:368
+msgid "You have successfully updated the Responsive Menu options"
+msgstr "Has actualizado los opciones del menú Flexible"
+
+#: app/models/CSSModel.php:24
+msgid "Unable to create CSS file"
+msgstr "No es posible crear el archivo de CSS"
+
+#: app/models/FolderModel.php:26
+msgid "Unable to create data folders"
+msgstr "No es posible crear carpetas de datos"
+
+#: app/models/FolderModel.php:29
+msgid "Unable to create CSS folders"
+msgstr "No es posible crear carpetas de CSS"
+
+#: app/models/FolderModel.php:32
+msgid "Unable to create JS folders"
+msgstr "No es posible crear carpetas de JS"
+
+#: app/models/JSModel.php:24
+msgid "Unable to create JS file"
+msgstr "No es posible crear el archivo de JS"
+
+#: app/views/admin/page.phtml:202
+msgid "Version"
+msgstr ""
+
+#: app/views/admin/page.phtml:211 app/views/admin/page.phtml:1924
+msgid "Update Responsive Menu Options"
+msgstr "Actualizar Opciones del menú Flexible"
+
+#: app/views/admin/page.phtml:215
+msgid "Responsive Menu Options"
+msgstr "Opciones del Menú Flexible"
+
+#: app/views/admin/page.phtml:215
+msgid "Go Pro - Upgrade now"
+msgstr ""
+
+#: app/views/admin/page.phtml:234
+#, fuzzy
+msgid "Meta Tag Check"
+msgstr "Comprobar Meta Etiqueta de Viewport "
+
+#: app/views/admin/page.phtml:239
+msgid "Recommended Metaport Tag"
+msgstr "Metaport Tag Recomendado"
+
+#: app/views/admin/page.phtml:251 app/views/admin/page.phtml:931
+#: app/views/admin/page.phtml:1329 app/views/admin/page.phtml:1873
+msgid "Note"
+msgstr ""
+
+#: app/views/admin/page.phtml:252
+msgid "This is only a reference guide and yours may vary slightly"
+msgstr ""
+
+#: app/views/admin/page.phtml:258
+msgid "Transient Caching"
+msgstr ""
+
+#: app/views/admin/page.phtml:265
+msgid "Turn on transient caching"
+msgstr ""
+
+#: app/views/admin/page.phtml:268
+#, php-format
+msgid ""
+"Transient caching will save you ~80% on load times, however please note that "
+"this will break active links etc."
+msgstr ""
+
+#: app/views/admin/page.phtml:283
+msgid "Shortcode Support"
+msgstr ""
+
+#: app/views/admin/page.phtml:292
+#, fuzzy
+msgid "Click to use shortcode"
+msgstr "Cerrar menú con un clic de enlace"
+
+#: app/views/admin/page.phtml:294
+#, fuzzy
+msgid ""
+"Tick if you would like to use a shortcode instead of the default behaviour"
+msgstr "Marque si desea remover el campo de búsqueda"
+
+#: app/views/admin/page.phtml:308
+msgid ""
+"For a list of available shortcode options with explanations please visit the "
+"following page:"
+msgstr ""
+
+#: app/views/admin/page.phtml:311
+msgid "Shortcode Options"
+msgstr ""
+
+#: app/views/admin/page.phtml:319
+msgid "Available Shortcode Options/Values"
+msgstr ""
+
+#: app/views/admin/page.phtml:323 app/views/admin/page.phtml:351
+msgid "Option"
+msgstr ""
+
+#: app/views/admin/page.phtml:324
+msgid "Values"
+msgstr ""
+
+#: app/views/admin/page.phtml:346
+msgid "Sorry, there are no available options"
+msgstr ""
+
+#: app/views/admin/page.phtml:352
+msgid "Example Value"
+msgstr ""
+
+#: app/views/admin/page.phtml:400 app/views/admin/page.phtml:1401
+#: app/views/admin/page.phtml:1545
+msgid "e.g"
+msgstr "e.g"
+
+#: app/views/admin/page.phtml:413
+msgid "Click Button Settings"
+msgstr ""
+
+#: app/views/admin/page.phtml:419
+msgid "Click Button Title"
+msgstr ""
+
+#: app/views/admin/page.phtml:421
+msgid "This is the title under the 3 lines of the click button"
+msgstr ""
+
+#: app/views/admin/page.phtml:431
+msgid "Click Button Image"
+msgstr ""
+
+#: app/views/admin/page.phtml:433
+msgid ""
+"This is the click button that replaces the 3 lines. If empty, the 3 lines "
+"will be used"
+msgstr ""
+
+#: app/views/admin/page.phtml:445 app/views/admin/page.phtml:483
+#: app/views/admin/page.phtml:685 app/views/admin/page.phtml:901
+#: app/views/admin/page.phtml:921
+msgid "Upload Image"
+msgstr "Subir Imagen"
+
+#: app/views/admin/page.phtml:454
+msgid "Change click menu to an X on click"
+msgstr ""
+
+#: app/views/admin/page.phtml:457
+msgid "Tick this if you would like the 3 lines to turn into an x once clicked"
+msgstr ""
+"Marque esto si quiere que 3 líneas a convertir en una x cuando se hace clic"
+
+#: app/views/admin/page.phtml:469
+msgid "Click Button Image When Clicked"
+msgstr ""
+
+#: app/views/admin/page.phtml:471
+msgid ""
+"This is the click button image that replaces the 3 lines when clicked. If "
+"empty, the 3 lines will be used"
+msgstr ""
+
+#: app/views/admin/page.phtml:495
+msgid "Fixed Positioning"
+msgstr "Posicionamiento fijo"
+
+#: app/views/admin/page.phtml:497
+msgid ""
+"Tick this if you would like the click button to remain in the same place "
+"when scrolling"
+msgstr ""
+
+#: app/views/admin/page.phtml:510
+msgid "Click Trigger"
+msgstr ""
+
+#: app/views/admin/page.phtml:512
+msgid "You can set a custom ID or class for custom triggers here if you wish."
+msgstr ""
+
+#: app/views/admin/page.phtml:525
+#, fuzzy
+msgid "Click Button Size Settings"
+msgstr "Tamaño de la Fuente del Clic del Botón"
+
+#: app/views/admin/page.phtml:531
+#, fuzzy
+msgid "Width"
+msgstr "Ancho maximo del Menú"
+
+#: app/views/admin/page.phtml:533
+#, fuzzy
+msgid "This is the width of the individual 3 lines"
+msgstr "Este es el color del texto de los enlaces del menú"
+
+#: app/views/admin/page.phtml:540 app/views/admin/page.phtml:554
+#: app/views/admin/page.phtml:570 app/views/admin/page.phtml:598
+#: app/views/admin/page.phtml:1247 app/views/admin/page.phtml:1264
+#: app/views/admin/page.phtml:1278 app/views/admin/page.phtml:1322
+#: app/views/admin/page.phtml:1349 app/views/admin/page.phtml:1363
+#: app/views/admin/page.phtml:1538
+msgid "px"
+msgstr "px"
+
+#: app/views/admin/page.phtml:545
+#, fuzzy
+msgid "Height"
+msgstr "Altura de los Enlaces "
+
+#: app/views/admin/page.phtml:547
+#, fuzzy
+msgid "This is the height of the individual 3 lines"
+msgstr "Este es el color del texto de los enlaces del menú"
+
+#: app/views/admin/page.phtml:561
+msgid "Margin"
+msgstr ""
+
+#: app/views/admin/page.phtml:563
+msgid "This is the margin between the individual 3 lines"
+msgstr ""
+
+#: app/views/admin/page.phtml:583
+msgid "Click Button Location Settings"
+msgstr ""
+
+#: app/views/admin/page.phtml:589 app/views/admin/page.phtml:747
+msgid "Top"
+msgstr "Superior"
+
+#: app/views/admin/page.phtml:591
+msgid ""
+"This is the distance from the top of the page in px that the click button "
+"will be displayed"
+msgstr ""
+
+#: app/views/admin/page.phtml:603
+msgid "Left/Right Distance"
+msgstr ""
+
+#: app/views/admin/page.phtml:605
+msgid ""
+"This is the distance from the right/left of the page (as defined below) in % "
+"that the menu will be displayed"
+msgstr ""
+
+#: app/views/admin/page.phtml:619
+msgid "Left/Right"
+msgstr ""
+
+#: app/views/admin/page.phtml:621
+msgid ""
+"This defines whether the menu button is shown as a percentage from the left "
+"or right"
+msgstr ""
+
+#: app/views/admin/page.phtml:651
+msgid "Menu Settings"
+msgstr "Configuraciones del Menú"
+
+#: app/views/admin/page.phtml:660
+msgid "This is the title at the top of the responsive menu"
+msgstr "Este es el título en la parte superior del menú flexible"
+
+#: app/views/admin/page.phtml:671
+msgid "Menu Image"
+msgstr "Imagen del Menú "
+
+#: app/views/admin/page.phtml:673
+msgid ""
+"This is the image that sits next to the responsive menu title. The best size "
+"is 32px x 32px"
+msgstr ""
+"Esta es la imagen que se encuentra al lado del título del menú flexible. El "
+"mejor tamaño es 32px x 32px"
+
+#: app/views/admin/page.phtml:695
+msgid "Choose Menu To Responsify"
+msgstr "Escoger Menú A Flexibilizar"
+
+#: app/views/admin/page.phtml:697
+msgid "This is the menu that will be used responsively"
+msgstr "Este es el menú que se utilizará flexiblemente"
+
+#: app/views/admin/page.phtml:717
+msgid "You haven't set up any site menus yet"
+msgstr "Usted no ha configurado ningún menú en el sitio todavía"
+
+#: app/views/admin/page.phtml:726
+msgid "Slide Side"
+msgstr "Lado de la Diapositiva"
+
+#: app/views/admin/page.phtml:728
+msgid "This is the side of the screen from which the menu will slide"
+msgstr "Este es el lado de la pantalla desde el cual el menú se desplazará"
+
+#: app/views/admin/page.phtml:735 app/views/admin/page.phtml:1288
+#: app/views/admin/page.phtml:1295
+msgid "Left"
+msgstr "Izquierda"
+
+#: app/views/admin/page.phtml:741 app/views/admin/page.phtml:1305
+msgid "Right"
+msgstr "Derecha"
+
+#: app/views/admin/page.phtml:753
+msgid "Bottom"
+msgstr ""
+
+#: app/views/admin/page.phtml:766
+msgid "Choose Theme Location Menu To Responsify"
+msgstr ""
+
+#: app/views/admin/page.phtml:768
+msgid ""
+"The menu assigned to this theme location (registered with register_nav_menu) "
+"will be used for displaying the responsive menu (useful if you use a plugin "
+"like polylang)"
+msgstr ""
+
+#: app/views/admin/page.phtml:787
+msgid "None"
+msgstr ""
+
+#: app/views/admin/page.phtml:794
+msgid "You haven't set up any menus location yet"
+msgstr ""
+
+#: app/views/admin/page.phtml:802
+#, fuzzy
+msgid "Menu Title Link"
+msgstr "Color del Borde del Enlace del Menú"
+
+#: app/views/admin/page.phtml:804
+#, fuzzy
+msgid "This is the link location for the title"
+msgstr "translated"
+
+#: app/views/admin/page.phtml:814
+#, fuzzy
+msgid "Menu Title Link Location"
+msgstr "Color del Borde del Enlace del Menú"
+
+#: app/views/admin/page.phtml:816
+msgid "This is where your title page will be opened once clicked"
+msgstr ""
+
+#: app/views/admin/page.phtml:823
+msgid "New Tab"
+msgstr ""
+
+#: app/views/admin/page.phtml:829
+#, fuzzy
+msgid "Same Page"
+msgstr "translated"
+
+#: app/views/admin/page.phtml:835
+#, fuzzy
+msgid "Parent Page"
+msgstr "translated"
+
+#: app/views/admin/page.phtml:841
+msgid "Full Window Body"
+msgstr ""
+
+#: app/views/admin/page.phtml:852
+#, fuzzy
+msgid "Sub Menu Arrow Settings"
+msgstr "Configuraciones del Menú"
+
+#: app/views/admin/page.phtml:858
+msgid "Active Geometric Shape"
+msgstr ""
+
+#: app/views/admin/page.phtml:869
+msgid "Inactive Geometric Shape"
+msgstr ""
+
+#: app/views/admin/page.phtml:882
+msgid "You can find a list of Geometric HTML shape codes below"
+msgstr ""
+
+#: app/views/admin/page.phtml:889
+#, fuzzy
+msgid "Active Image"
+msgstr "Imagen del Menú "
+
+#: app/views/admin/page.phtml:909
+#, fuzzy
+msgid "Inactive Image"
+msgstr "Imagen del Menú "
+
+#: app/views/admin/page.phtml:932
+msgid ""
+"Images have preference over shapes, to use HTML shapes please leave the "
+"image field blank"
+msgstr ""
+
+#: app/views/admin/page.phtml:939
+msgid "Colour Settings"
+msgstr "Ajustes de color"
+
+#: app/views/admin/page.phtml:941
+#, fuzzy
+msgid "Background Colours"
+msgstr "Colores de Fondos"
+
+#: app/views/admin/page.phtml:945
+#, fuzzy
+msgid "Click Button"
+msgstr "Tamaño de la Fuente del Clic del Botón"
+
+#: app/views/admin/page.phtml:953
+#, fuzzy
+msgid "Click Button Line & Text Colour"
+msgstr "Línea del Menú y Color del texto"
+
+#: app/views/admin/page.phtml:955
+msgid "This is the colour of the 3 lines and text for the click button"
+msgstr ""
+
+#: app/views/admin/page.phtml:968
+#, fuzzy
+msgid "Click Button Background Colour"
+msgstr "Color de Fondo del Botón del Menú"
+
+#: app/views/admin/page.phtml:970
+msgid "This is the background colour of the 3 lines container"
+msgstr "Este es el color de fondo del contenedor de las 3 líneas"
+
+#: app/views/admin/page.phtml:985
+#, fuzzy
+msgid "Click Button Background Transparent"
+msgstr "Fondo del Menú Transparente"
+
+#: app/views/admin/page.phtml:987
+#, fuzzy
+msgid ""
+"Tick this if you would like a transparent background on the click button"
+msgstr "+Marque esta opción si desea un fondo transparente"
+
+#: app/views/admin/page.phtml:1007
+#, fuzzy
+msgid "Main Menu"
+msgstr "Titulo del menú"
+
+#: app/views/admin/page.phtml:1015
+msgid "Menu Background Colour"
+msgstr "Color de Fondo del Menú "
+
+#: app/views/admin/page.phtml:1017
+msgid "This is the background colour of the expanded menu"
+msgstr "Este es el color de fondo del menú desplegado"
+
+#: app/views/admin/page.phtml:1030
+msgid "Menu Background Hover Colour"
+msgstr "Color de Fondo del Over del Menú"
+
+#: app/views/admin/page.phtml:1032
+msgid "This is the hover background colour of the expanded menu"
+msgstr "Este es el color de fondo del over del menú expandido"
+
+#: app/views/admin/page.phtml:1047
+msgid "Menu Link Border Colour"
+msgstr "Color del Borde del Enlace del Menú"
+
+#: app/views/admin/page.phtml:1049
+#, fuzzy
+msgid "This is the border colour of the  menu links"
+msgstr "Color del Borde del Enlace del Menú"
+
+#: app/views/admin/page.phtml:1062
+msgid "Title Background Colour"
+msgstr "Color de Fondo del Título"
+
+#: app/views/admin/page.phtml:1064
+#, fuzzy
+msgid "This is the background colour of the menu title"
+msgstr "Este es el color de fondo del título del menú"
+
+#: app/views/admin/page.phtml:1079
+#, fuzzy
+msgid "Current Page Link Background Colour"
+msgstr "Este es el color de fondo de la página actual"
+
+#: app/views/admin/page.phtml:1081
+#, fuzzy
+msgid "This is the background colour of the current page link"
+msgstr "Color de Fondo de la Página Actual"
+
+#: app/views/admin/page.phtml:1094
+msgid "Current Page Link Background Hover Colour"
+msgstr ""
+
+#: app/views/admin/page.phtml:1096
+msgid "This is the hover background colour of the current page link"
+msgstr ""
+
+#: app/views/admin/page.phtml:1110
+#, fuzzy
+msgid "Text Colours"
+msgstr "Colores del Texto"
+
+#: app/views/admin/page.phtml:1119
+msgid "Menu Title Colour"
+msgstr "Color del Título del Menú "
+
+#: app/views/admin/page.phtml:1121
+#, fuzzy
+msgid "This is the text colour of the menu title"
+msgstr "Este es el color del texto del título del menú"
+
+#: app/views/admin/page.phtml:1134
+msgid "Menu Title Hover Colour"
+msgstr "Color del Over del Título del Menú"
+
+#: app/views/admin/page.phtml:1136
+#, fuzzy
+msgid "This is the hover colour of the menu title"
+msgstr "Color del Over del Título del Menú"
+
+#: app/views/admin/page.phtml:1151
+#, fuzzy
+msgid "Menu Link Colour"
+msgstr "Color del Borde del Enlace del Menú"
+
+#: app/views/admin/page.phtml:1153
+#, fuzzy
+msgid "This is the text colour of the menu links"
+msgstr "Este es el color del texto de los enlaces del menú"
+
+#: app/views/admin/page.phtml:1166
+#, fuzzy
+msgid "Menu Link Hover Colour"
+msgstr "Color del Borde del Enlace del Menú"
+
+#: app/views/admin/page.phtml:1168
+#, fuzzy
+msgid "This is the text hover colour of the menu links"
+msgstr "Este es el color del over del texto de los enlaces del menú"
+
+#: app/views/admin/page.phtml:1184
+#, fuzzy
+msgid "Current Page Link Colour"
+msgstr "Color de Fondo de la Página Actual"
+
+#: app/views/admin/page.phtml:1186
+#, fuzzy
+msgid "This is the text colour of the current page link"
+msgstr "Color de Texto de la Página Actual"
+
+#: app/views/admin/page.phtml:1199
+msgid "Current Page Link Hover Colour"
+msgstr ""
+
+#: app/views/admin/page.phtml:1201
+msgid "This is the text hover colour of the current page link"
+msgstr ""
+
+#: app/views/admin/page.phtml:1218
+msgid "Style Settings"
+msgstr "Configuraciones de Estilo"
+
+#: app/views/admin/page.phtml:1225
+msgid "Font"
+msgstr "Fuente"
+
+#: app/views/admin/page.phtml:1227
+msgid "Enter a font name below, if empty your default site font will be used"
+msgstr ""
+"Introduzca un nombre de tipo de letra, si está vacío se utilizará el tipo de "
+"letra predeterminada del sitio"
+
+#: app/views/admin/page.phtml:1238
+msgid "Font Size"
+msgstr "Tamaño de la Fuente"
+
+#: app/views/admin/page.phtml:1240
+msgid "Enter a font size in pixels below"
+msgstr "Introduzca un tamaño de fuente en píxeles debajo"
+
+#: app/views/admin/page.phtml:1240 app/views/admin/page.phtml:1257
+#: app/views/admin/page.phtml:1271 app/views/admin/page.phtml:1288
+#: app/views/admin/page.phtml:1315 app/views/admin/page.phtml:1417
+#: app/views/admin/page.phtml:1431 app/views/admin/page.phtml:1583
+msgid "default"
+msgstr "por defecto"
+
+#: app/views/admin/page.phtml:1255
+msgid "Click Button Font Size"
+msgstr "Tamaño de la Fuente del Clic del Botón"
+
+#: app/views/admin/page.phtml:1257
+msgid "Enter a click button font size in pixels below"
+msgstr "Entre el tamaño de la fuente del clic del botón en píxeles debajo"
+
+#: app/views/admin/page.phtml:1269
+msgid "Title Font Size"
+msgstr "Tamaño de la Fuente del Título"
+
+#: app/views/admin/page.phtml:1271
+msgid "Enter a title font size in pixels below"
+msgstr "Entre el tamaño de la fuente del título en píxeles debajo"
+
+#: app/views/admin/page.phtml:1286
+msgid "Text Alignment"
+msgstr "Alineación del Texto"
+
+#: app/views/admin/page.phtml:1288
+msgid "Enter a text alignment option below"
+msgstr "Entre la opción de la alineación del texto debajo"
+
+#: app/views/admin/page.phtml:1300
+msgid "Centre"
+msgstr "Centrar"
+
+#: app/views/admin/page.phtml:1313
+msgid "Links Height"
+msgstr "Altura de los Enlaces "
+
+#: app/views/admin/page.phtml:1315
+msgid "Enter a link height size in pixels below"
+msgstr "Introduzca el tamaño de la altura del enlace en píxeles debajo"
+
+#: app/views/admin/page.phtml:1330
+msgid ""
+"Setting the below two values to the same number will give you a fixed width "
+"effect"
+msgstr ""
+
+#: app/views/admin/page.phtml:1340
+msgid "Minimum Width"
+msgstr "Ancho Mínimo"
+
+#: app/views/admin/page.phtml:1342
+msgid "Enter a minimum menu width size in pixels below"
+msgstr "Entre un tamaño de ancho mínimo de menú en píxeles debajo"
+
+#: app/views/admin/page.phtml:1354
+#, fuzzy
+msgid "Maximum Width"
+msgstr "Ancho maximo del Menú"
+
+#: app/views/admin/page.phtml:1356
+#, fuzzy
+msgid "Enter a maximum menu width size in pixels below"
+msgstr "Entre un tamaño de ancho maximo de menú en píxeles debajo"
+
+#: app/views/admin/page.phtml:1371
+msgid "Animation Settings"
+msgstr "Configuraciones de la Animación"
+
+#: app/views/admin/page.phtml:1377
+msgid "Slide Animation"
+msgstr "Animación de Diapositiva"
+
+#: app/views/admin/page.phtml:1379
+msgid "Choose the type of animation applied to the menu"
+msgstr "Elija el tipo de animación aplicada al menú"
+
+#: app/views/admin/page.phtml:1386
+msgid "Overlay"
+msgstr "Superposición"
+
+#: app/views/admin/page.phtml:1391
+msgid "Push"
+msgstr "Empuje"
+
+#: app/views/admin/page.phtml:1399
+msgid "Page Wrappers CSS"
+msgstr "CSS de la Envoltura de la Página "
+
+#: app/views/admin/page.phtml:1401
+msgid ""
+"This is the CSS of the wrapper you want to push when using the push animation"
+msgstr ""
+"Este es el CSS de la envoltura que desea empujar cuando se usa la animación "
+"de empuje"
+
+#: app/views/admin/page.phtml:1415
+msgid "Animation Speed"
+msgstr "Velocidad de la Animación"
+
+#: app/views/admin/page.phtml:1417
+msgid "Enter a speed in seconds below of the slide animation"
+msgstr ""
+"Introduzca la velocidad en cuestión en segundos debajo de la animación de "
+"diapositiva"
+
+#: app/views/admin/page.phtml:1424 app/views/admin/page.phtml:1438
+msgid "seconds"
+msgstr "segundos"
+
+#: app/views/admin/page.phtml:1429
+msgid "Transition Speed"
+msgstr "Velocidad de Transición"
+
+#: app/views/admin/page.phtml:1431
+msgid "Enter a speed in seconds below of the hover transition effect"
+msgstr "Introduzca la velocidad en segundos debajo del efecto de transición"
+
+#: app/views/admin/page.phtml:1445
+#, fuzzy
+msgid "Accordion Animation For Sub-Menus"
+msgstr "Sub-Menús de Auto Expansión"
+
+#: app/views/admin/page.phtml:1447
+msgid "Tick to enable the accordion animation for sub-menu items"
+msgstr ""
+
+#: app/views/admin/page.phtml:1460
+msgid "Push button with Animation"
+msgstr ""
+
+#: app/views/admin/page.phtml:1462
+msgid "Tick to enable the click button to be pushed with animation"
+msgstr ""
+
+#: app/views/admin/page.phtml:1480
+#, fuzzy
+msgid "Additional HTML Content Settings"
+msgstr "Configuraciones de la Animación"
+
+#: app/views/admin/page.phtml:1487
+msgid "Additional HTML Content"
+msgstr ""
+
+#: app/views/admin/page.phtml:1489
+msgid ""
+"Enter any additional HTML you may want below, useful for advertisement "
+"banners etc. (accepts shortcodes)"
+msgstr ""
+
+#: app/views/admin/page.phtml:1496
+msgid "Additional HTML Content Positioning"
+msgstr ""
+
+#: app/views/admin/page.phtml:1498
+#, fuzzy
+msgid "Select where you would like the additional HTML content to appear"
+msgstr "Marque si desea remover el campo de búsqueda"
+
+#: app/views/admin/page.phtml:1505 app/views/admin/page.phtml:1627
+#, fuzzy
+msgid "Above Menu Links"
+msgstr "Este es el color del texto de los enlaces del menú"
+
+#: app/views/admin/page.phtml:1510 app/views/admin/page.phtml:1632
+#, fuzzy
+msgid "Below Menu Links"
+msgstr "Este es el color del texto de los enlaces del menú"
+
+#: app/views/admin/page.phtml:1523
+msgid "Menu Advanced Settings"
+msgstr ""
+
+#: app/views/admin/page.phtml:1529
+msgid "Menu Breakpoint"
+msgstr "Punto de Ruptura del Menú "
+
+#: app/views/admin/page.phtml:1531
+msgid ""
+"This is the point where the responsive menu will be visible in px width of "
+"the browser"
+msgstr ""
+"Este es el punto donde el menú flexible será visible en ancho en px del "
+"navegador"
+
+#: app/views/admin/page.phtml:1543
+msgid "CSS of Menu To Hide"
+msgstr "CSS del Menú A Esconder"
+
+#: app/views/admin/page.phtml:1545
+msgid ""
+"This is the CSS of the menu you want to hide once the responsive menu shows"
+msgstr ""
+"Este es el CSS del menú que desea esconder una vez que el menú flexible se "
+"muestra"
+
+#: app/views/admin/page.phtml:1559
+msgid "Menu Depth"
+msgstr "Profundidad del  Menú"
+
+#: app/views/admin/page.phtml:1561
+msgid "This is how deep into your menu tree will be visible (max"
+msgstr "Esto es cuán profundo en su árbol del menú será visible (max"
+
+#: app/views/admin/page.phtml:1580
+msgid "Menu Width"
+msgstr "Ancho del Menú"
+
+#: app/views/admin/page.phtml:1582
+msgid "This is the width the menu takes up across the page once expanded"
+msgstr ""
+"Esto es el ancho que el menú coje a lo largo de la página una vez expandido"
+
+#: app/views/admin/page.phtml:1603
+msgid "Remove Search Box"
+msgstr "Remover el Campo de Búsqueda"
+
+#: app/views/admin/page.phtml:1605
+msgid "Tick if you would like to remove the search box"
+msgstr "Marque si desea remover el campo de búsqueda"
+
+#: app/views/admin/page.phtml:1618
+#, fuzzy
+msgid "Search Box Positioning"
+msgstr "Remover el Campo de Búsqueda"
+
+#: app/views/admin/page.phtml:1620
+#, fuzzy
+msgid "Select where you would like the search box to appear"
+msgstr "Marque si desea remover el campo de búsqueda"
+
+#: app/views/admin/page.phtml:1642
+#, fuzzy
+msgid "Click to Close Menu on Link Click"
+msgstr "Cerrar menú con un clic de enlace"
+
+#: app/views/admin/page.phtml:1644
+msgid ""
+"Tick if you would like to close the menu on each link click, useful for "
+"single page sites"
+msgstr ""
+"Marque si desea cerrar el menú en cada enlace haciendo click, útil para los "
+"sitios de una sola página"
+
+#: app/views/admin/page.phtml:1657
+#, fuzzy
+msgid "Auto Expand Current Parent Items"
+msgstr "Sub-Menús de Auto Expansión"
+
+#: app/views/admin/page.phtml:1659
+#, fuzzy
+msgid ""
+"Tick if you would like to make the current pages children expanded "
+"automatically"
+msgstr "Marque si quiere que los submenús se expandan automáticamente"
+
+#: app/views/admin/page.phtml:1673
+msgid "Auto Expand Sub-Menus"
+msgstr "Sub-Menús de Auto Expansión"
+
+#: app/views/admin/page.phtml:1675
+msgid "Tick if you would like sub-menus to be automatically expanded"
+msgstr "Marque si quiere que los submenús se expandan automáticamente"
+
+#: app/views/admin/page.phtml:1688
+msgid "Ignore Parent Clicks"
+msgstr ""
+
+#: app/views/admin/page.phtml:1690
+#, fuzzy
+msgid "Tick if you would like to ignore clicks on parent links"
+msgstr "Marque si quiere incluir su script de jQuery en el pie de página"
+
+#: app/views/admin/page.phtml:1704
+#, fuzzy
+msgid "Click to Close Menu on Page Click"
+msgstr "Cerrar menú con un clic en la pagina"
+
+#: app/views/admin/page.phtml:1706
+#, fuzzy
+msgid "Tick if you would like to close the current menu on page clicks"
+msgstr ""
+"Marque si desea cerrar el menú en cada enlace haciendo click en la pagina"
+
+#: app/views/admin/page.phtml:1727
+msgid "Technical Settings"
+msgstr ""
+
+#: app/views/admin/page.phtml:1733
+msgid "Minify output"
+msgstr "Minimizar salida"
+
+#: app/views/admin/page.phtml:1735
+msgid ""
+"Tick if you would like to minify the script/style output. Saves up to 50% in "
+"file size"
+msgstr ""
+"Marque si desea minimizar la salida del script/estilo. Salva hasta el 50% "
+"del tamaño del archivo."
+
+#: app/views/admin/page.phtml:1748
+msgid "Include script in footer"
+msgstr "Incluir script en el pie de página"
+
+#: app/views/admin/page.phtml:1750
+msgid "Tick if you would like to include your jQuery script in footer"
+msgstr "Marque si quiere incluir su script de jQuery en el pie de página"
+
+#: app/views/admin/page.phtml:1764
+msgid "Include CSS/JS as external files"
+msgstr "Incluir CSS/JS como archivos externos"
+
+#: app/views/admin/page.phtml:1766
+msgid "Tick if you would like to include CSS and jQuery as external files"
+msgstr "Marque si quiere incluir el CSS y el jQuery como archivos externos"
+
+#: app/views/admin/page.phtml:1777
+msgid "Remove CSS !important tags"
+msgstr "Retire las etiquetas !important del CSS"
+
+#: app/views/admin/page.phtml:1780
+msgid "Tick this if you would like to remove the !important tags from the CSS"
+msgstr "Marque si desea remover las etiquetas !important del CSS"
+
+#: app/views/admin/page.phtml:1781
+msgid ""
+"Ticking this will make it easier to over-ride the styles but may make the "
+"default settings not display well"
+msgstr ""
+"Marcar esto hará más fácil sobrescribir los estilos pero puede hacer que las "
+"configuraciones por defecto no se muestren bien"
+
+#: app/views/admin/page.phtml:1795
+msgid "Custom Walker"
+msgstr ""
+
+#: app/views/admin/page.phtml:1803
+msgid "Specify you own Walker for the menu (wp_nav_menu parameter)"
+msgstr ""
+
+#: app/views/admin/page.phtml:1804
+msgid ""
+"For advanced users only - if you don't know what you're doing please leave "
+"alone"
+msgstr ""
+
+#: app/views/admin/page.phtml:1833
+#, fuzzy
+msgid "Import File"
+msgstr "No es posible crear el archivo de CSS"
+
+#: app/views/admin/page.phtml:1840
+msgid "Import Options From XML"
+msgstr ""
+
+#: app/views/admin/page.phtml:1859
+msgid "Export Current Options"
+msgstr ""
+
+#: app/views/admin/page.phtml:1874
+msgid ""
+"Please be warned this will reset all your current settings, please export "
+"your current files first"
+msgstr ""
+
+#: app/views/admin/page.phtml:1880
+msgid "Reset ALL Current Options"
+msgstr ""
+
+#: app/views/admin/page.phtml:1895 app/views/admin/page.phtml:1908
+msgid ""
+"This feature is only available in the pro version, please click below to "
+"upgrade"
+msgstr ""
+
+#: app/views/admin/page.phtml:1898 app/views/admin/page.phtml:1911
+msgid "Upgrade now"
+msgstr ""
+
+#~ msgid ""
+#~ "Highly Customisable Responsive Menu Plugin Created By Peter Featherstone"
+#~ msgstr "Plugin Menú Flexible Muy Adaptable Creado Por Peter Featherstone"
+
+#~ msgid "Viewport Meta Tag Check"
+#~ msgstr "Comprobar Meta Etiqueta de Viewport "
+
+#~ msgid "Below Viewport Meta Tag Found"
+#~ msgstr "Meta Etiqueta Debajo de Viewport Encontrada"
+
+#~ msgid "Viewport Meta Tag Not Found"
+#~ msgstr "No se Encontró la Meta Etiqueta de Viewport "
+
+#~ msgid ""
+#~ "This is the distance from the right of the page in % that the menu will "
+#~ "be displayed"
+#~ msgstr ""
+#~ "Esta es la distancia desde la derecha de la página en % en la que se "
+#~ "mostrará el menú"
+
+#~ msgid ""
+#~ "Warning: The Push Animation requires you to place the following meta tag "
+#~ "in your site header"
+#~ msgstr ""
+#~ "Advertencia: La Animación de Empuje requiere que ponga la siguiente meta "
+#~ "etiqueta en el encabezado de su sitio"
+
+#, fuzzy
+#~ msgid "Export Options"
+#~ msgstr "Se ha producido un error al actualizar las opciones del plugin"
+
+#, fuzzy
+#~ msgid "Import Options"
+#~ msgstr "Se ha producido un error al actualizar las opciones del plugin"
+
+#~ msgid "Menu Button Title"
+#~ msgstr "Título de Botón de Menú "
+
+#~ msgid "This is the title under the 3 lines of the menu button"
+#~ msgstr "Este es el título debajo de las 3 líneas del botón del menú"
+
+#~ msgid "Click Menu Image"
+#~ msgstr "Imagen del Menú del Clic"
+
+#~ msgid ""
+#~ "This is the click image button that replaces the 3 lines. If empty, the 3 "
+#~ "lines will be used"
+#~ msgstr ""
+#~ "Este el boton de la imagen del clic que remplaza a las 3 líneas. Si se "
+#~ "deja vacío, las 3 líneas serán usadas"
+
+#, fuzzy
+#~ msgid "Click Menu Image When Clicked"
+#~ msgstr "Imagen del Menú del Clic"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is the click image button that replaces the 3 lines when clicked. If "
+#~ "empty, the 3 lines will be used"
+#~ msgstr ""
+#~ "Este el boton de la imagen del clic que remplaza a las 3 líneas. Si se "
+#~ "deja vacío, las 3 líneas serán usadas"
+
+#~ msgid "Location Settings"
+#~ msgstr "Configuración de Localización"
+
+#~ msgid ""
+#~ "This is the distance from the top of the page in px that the menu will be "
+#~ "displayed"
+#~ msgstr ""
+#~ "Esta es la distancia desde la parte superior de la página en px en la que "
+#~ "se mostrará el menú"
+
+#~ msgid "This is the colour of the 3 lines and text for the menu button"
+#~ msgstr "Este es el color de las 3 líneas y el texto del botón de menú"
+
+#~ msgid ""
+#~ "Tick this if you would like the menu button to remain in the same place "
+#~ "when scrolling"
+#~ msgstr ""
+#~ "Marque esta opción si desea que el botón del menú permanezca en el mismo "
+#~ "lugar cuando se desplaza"
+
+#~ msgid "Change click menu to an x on click"
+#~ msgstr "Cambiar el clic del menú a una x en el clic"
+
+#, fuzzy
+#~ msgid "3 Line Size Settings"
+#~ msgstr "Configuración de Localización"
+
+#, fuzzy
+#~ msgid "Click Menu"
+#~ msgstr "Imagen del Menú del Clic"
+
+#~ msgid "Menu Text Hover Colour"
+#~ msgstr "Color del Over del Texto del Menú"
+
+#~ msgid "Initial Checks"
+#~ msgstr "Comprobaciones Iniciales"
+
+#~ msgid ""
+#~ "Your Responsive Menu Options and CSS/JS files have been updated "
+#~ "successfully"
+#~ msgstr ""
+#~ "Sus Opciones de Menú Flexible y archivos CSS/JS se han actualizado "
+#~ "correctamente"
+
+#~ msgid "Your Responsive Menu Options have been updated"
+#~ msgstr "Sus Opciones del Menú Flexible han sido actualizadas"
+
+#~ msgid "There was an error updating the plugin options"
+#~ msgstr "Se ha producido un error al actualizar las opciones del plugin"
+
+#~ msgid "left"
+#~ msgstr "izquierda"

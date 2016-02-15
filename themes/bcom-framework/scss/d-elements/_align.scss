@@ -1,5 +1,6 @@
 /*
  * Sets style for alignment classes
+ * required for WordPress classes generated automatically
  *
  */
 
@@ -21,4 +22,9 @@
 .aligncenter {
     margin-right: auto;
     margin-left: auto
+}
+
+// also center text
+.center-text {
+    text-align: center;
 }

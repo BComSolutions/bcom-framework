@@ -312,6 +312,58 @@ li {
   li:last-of-type {
     margin-bottom: 1em; }
 
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 700; }
+
+pre {
+  font-family: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace; }
+
+ol li {
+  list-style-type: decimal; }
+
+ul li {
+  list-style: disc; }
+
+dt {
+  font-weight: 700; }
+
+dd {
+  font-style: italic; }
+
+blockquote,
+q {
+  font-style: italic;
+  padding-left: 2em;
+  padding-right: 2em;
+  quotes: "&#8220;" "&#8221;"; }
+
+th {
+  font-weight: 700; }
+
+tr {
+  border-top: 1px solid #6d6d6d; }
+
+tr:last-of-type {
+  border-bottom: 1px solid #6d6d6d; }
+
+td {
+  padding: 0.25em 0.5em; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
 /*
  * Heading styles
  *
@@ -357,6 +409,26 @@ a {
     color: #7eb436;
     outline: 0;
     text-decoration: none; }
+
+/*
+ * Sets style for alignment classes
+ *
+ */
+.alignleft {
+  display: inline;
+  float: left; }
+
+.alignright {
+  display: inline;
+  float: right; }
+
+.aligncenter,
+.alignnone {
+  display: block; }
+
+.aligncenter {
+  margin-right: auto;
+  margin-left: auto; }
 
 /*
  * OBJECTS
@@ -581,7 +653,6 @@ nav ul li:hover > ul {
 nav ul {
   background: #5d8ac7;
   padding: 0;
-  list-style: none;
   position: relative; }
   nav ul:after {
     content: "";
@@ -589,7 +660,8 @@ nav ul {
     display: block; }
 
 nav ul li {
-  float: left; }
+  float: left;
+  list-style: none; }
   nav ul li:first-of-type {
     margin-left: 0; }
   nav ul li:last-of-type {

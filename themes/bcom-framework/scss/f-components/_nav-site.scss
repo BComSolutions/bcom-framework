@@ -19,9 +19,7 @@ nav ul li:hover > ul {
 nav ul {
     background: $color-primary;
     padding: 0;
-    list-style: none;
     position: relative;
-    //display: inline-table;
 
     &:after {
         content: "";
@@ -32,6 +30,7 @@ nav ul {
 
 nav ul li {
     float: left;
+    list-style: none;
 
     &:first-of-type {
         margin-left: 0;

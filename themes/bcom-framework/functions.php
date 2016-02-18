@@ -172,13 +172,12 @@ function bcom_scripts() {
 	  // Load theme-specific JavaScript with versioning based on last modified time; http://www.ericmmartin.com/5-tips-for-using-jquery-with-wordpress/
 	  wp_enqueue_script( 'bcom-js-core', get_stylesheet_directory_uri() . '/js/core' . $suffix . '.js', array( 'jquery' ), filemtime( get_template_directory() . '/js/core' . $suffix . '.js' ), true );
 
+
 	  // Conditionally load another script
 	  // if ( is_singular() ) {
 	  //   wp_enqueue_script( 'my-theme-extras', get_stylesheet_directory_uri() . '/js/extras' . $suffix . '.js', array( 'jquery' ), filemtime( get_template_directory() . '/js/extras' . $suffix . '.js' ), true );
 	  // }
 	}
-
-	// wp_enqueue_script( 'bcom-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	// wp_enqueue_script( 'bcom-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -188,6 +187,17 @@ function bcom_scripts() {
 }
 endif; // bcom_scripts
 add_action( 'wp_enqueue_scripts', 'bcom_scripts' );
+
+// Load jquery for responsive menu
+// http://bhoover.com/simple-jquery-mobile-menu/
+if ( ! is_admin() ) {
+	add_action( "wp_enqueue_scripts", "bcom_jquery_enqueue", 11 );
+}
+function bcom_jquery_enqueue() {
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', "http" . ( $_SERVER['SERVER_PORT'] == 443 ? "s" : "" ) . "://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", false, null );
+	wp_enqueue_script( 'jquery' );
+}
 
 
 /**
